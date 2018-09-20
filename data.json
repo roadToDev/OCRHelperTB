@@ -1,29 +1,59 @@
 {
   "oppos" : [
     {
-      "id" : "006f400000CQlBpAAL",
-      "name" : "JJs Pro-Tap - 8/22/2018 - 1",
+      "id" : "006f400000Ec3PLAAZ",
+      "name" : "DARR GROUP LLC - 9/19/2018 - 1",
       "stages" : [
         {
           "name" : "DocumentsDownloaded",
           "stageStatus" : {
             "statusStr" : "CompletedStStatus",
-            "log" : "List((Attachment(00Pf4000006JynEEAS,June 2018 Statement.pdf,005f4000002lRbOAAU,006f400000CQlBpAAL),Right(Inbox/006f400000CQlBpAAL/June 2018 Statement<006f400000CQlBpAAL>.pdf)), (Attachment(00Pf4000006JyiUEAS,July 31 2018 statement.pdf,005f4000002lRbOAAU,006f400000CQlBpAAL),Right(Inbox/006f400000CQlBpAAL/July 31 2018 statement<006f400000CQlBpAAL>.pdf)), (Attachment(00Pf4000006JynJEAS,May 2018 Statement.pdf,005f4000002lRbOAAU,006f400000CQlBpAAL),Right(Inbox/006f400000CQlBpAAL/May 2018 Statement<006f400000CQlBpAAL>.pdf)))",
+            "log" : "Inbox\\Wells Fargo\\CCR(006f400000Ec3PLAAZ).pdf\nInbox\\Wells Fargo\\Darr Group LLC Loan Application(006f400000Ec3PLAAZ).pdf\nInbox\\Wells Fargo\\Darr Group july,2018 bank statement(006f400000Ec3PLAAZ).pdf\nInbox\\Wells Fargo\\Darr Group LLC June,2018 bank statement(006f400000Ec3PLAAZ).pdf\nInbox\\Wells Fargo\\Darr Group LLC August,2018 bank statement(006f400000Ec3PLAAZ).pdf\nInbox\\Wells Fargo\\Darr Group LLC May,2018 bank statement(006f400000Ec3PLAAZ).pdf",
             "errors" : [
             ]
           }
-        }
-      ]
-    },
-    {
-      "id" : "006f400000CQnVuAAL",
-      "name" : "STRIDER SECURITY - 8/23/2018 - 1",
-      "stages" : [
+        },
         {
           "name" : "FilesAttached",
           "stageStatus" : {
             "statusStr" : "CompletedStStatus",
-            "log" : "List((Attachment(00Pf4000006KSp2EAG,April 2018 File.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/April 2018 File<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSp7EAG,Jun 2018 File.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/Jun 2018 File<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSpCEAW,BANK MARCH 2018 DAILY.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/BANK MARCH 2018 DAILY<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSikEAG,BKJDLN.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/BKJDLN<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSr8EAG,DL.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/DL<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSr3EAG,VC.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/VC<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KShhEAG,CCR.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/CCR<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KShcEAG,APP ELITE STRYDER 8-21-18.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/APP ELITE STRYDER 8-21-18<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSosEAG,July 2018 File.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/July 2018 File<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSoxEAG,May 2018 File.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/May 2018 File<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSj9EAG,BKJDLN.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/BKJDLN<006f400000CQnVuAAL>.pdf)))",
+            "log" : "CSV1\\WellsFargo\\Darr Group july,2018 bank statement(006f400000Ec3PLAAZ)\nCSV1\\WellsFargo\\Darr Group LLC August,2018 bank statement(006f400000Ec3PLAAZ)\nCSV1\\WellsFargo\\Darr Group LLC June,2018 bank statement(006f400000Ec3PLAAZ)",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "IntegrityValidated",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Success(The operation completed successfully) Bank Name  | Correct Ones | All Ones | %   \n ---------- | ------------ | -------- | --- \n WellsFargo | 6            | 6        | 100 \n N/A \n --- ",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "AccountChosen",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "fixed from web",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "SubmissionValidated",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "everything ok",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "ExportedToSF",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "https://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxKHEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxKMEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxKREA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxKWEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxKbEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxKgEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZSYMEA4\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZSYREA4\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZSYWEA4\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003Vui7AAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuiCAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuiMAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuiRAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTZhAAO\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTZmAAO\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTZrAAO\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTZwAAO\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTa1AAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/Opportunity/006f400000Ec3PLAAZ => Right()\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/chatter/feed-elements => Right({\"actor\":{\"additionalLabel\":null,\"communityNickname\":\"daria\",\"companyName\":\"Arcarius Funding LLC\",\"displayName\":\"Daria Tupchiy\",\"firstName\":\"Daria\",\"id\":\"005f4000002lRcqAAE\",\"isActive\":true,\"isInThisCommunity\":true,\"lastName\":\"Tupchiy\",\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Daria Tupchiy\",\"outOfOffice\":{\"message\":\"\"},\"photo\":{\"fullEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_200_v2.png?fromEmail=1\",\"largePhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/F\",\"mediumPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/M\",\"photoVersionId\":null,\"smallPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"standardEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_45_v2.png?fromEmail=1\",\"url\":\"/services/data/v43.0/connect/user-profiles/005f4000002lRcqAAE/photo\"},\"reputation\":null,\"stamps\":[],\"title\":\"Analyst\",\"type\":\"User\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRcqAAE\",\"userType\":\"Internal\"},\"body\":{\"isRichText\":false,\"messageSegments\":[{\"accessible\":true,\"name\":\"Wilson Hidalgo\",\"record\":{\"additionalLabel\":null,\"communityNickname\":\"WHidalgo\",\"companyName\":\"Arcarius Funding LLC\",\"displayName\":\"Wilson Hidalgo\",\"firstName\":\"Wilson\",\"id\":\"005f40000033trDAAQ\",\"isActive\":true,\"isInThisCommunity\":true,\"lastName\":\"Hidalgo\",\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Wilson Hidalgo\",\"outOfOffice\":{\"message\":\"\"},\"photo\":{\"fullEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/ncsphoto/YBFHZSl2jmQm4tcw3MTg1OVKvC5WBIhSfMWGarOGlJ5-j8Hep6Jh0IEQNlfHd6h5Kd1xdACl5Jr0y6W5z_SY-w%3D%3D?fromEmail=1\",\"largePhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000LFYf/F\",\"mediumPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000LFYf/M\",\"photoVersionId\":\"729f4000000LFYfAAO\",\"smallPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000LFYf/T\",\"standardEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/ncsphoto/YBFHZSl2jmQm4tcw3MTg1OVKvC5WBIhSfMWGarOGlJ73BnMFdWPulUxnqjTticnqf9le7u7u4E2Yh60UbhE_mw%3D%3D?fromEmail=1\",\"url\":\"/services/data/v43.0/connect/user-profiles/005f40000033trDAAQ/photo\"},\"reputation\":null,\"stamps\":[],\"title\":\"Analyst\",\"type\":\"User\",\"url\":\"/services/data/v43.0/chatter/users/005f40000033trDAAQ\",\"userType\":\"Internal\"},\"text\":\"@Wilson Hidalgo\",\"type\":\"Mention\"},{\"text\":\" statements uploaded\",\"type\":\"Text\"}],\"text\":\"@Wilson Hidalgo statements uploaded\"},\"capabilities\":{\"associatedActions\":{\"platformActionGroups\":[]},\"bookmarks\":{\"isBookmarkedByCurrentUser\":false},\"chatterLikes\":{\"isLikedByCurrentUser\":false,\"likesMessage\":null,\"myLike\":null,\"page\":{\"currentPageToken\":0,\"currentPageUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nGgXKCA0/capabilities/chatter-likes/items\",\"items\":[],\"nextPageToken\":null,\"nextPageUrl\":null,\"previousPageToken\":null,\"previousPageUrl\":null,\"total\":0}},\"close\":{\"canContextUserUpdateIsClosed\":false,\"isClosed\":false},\"comments\":{\"page\":{\"currentPageToken\":null,\"currentPageUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nGgXKCA0/capabilities/comments/items\",\"items\":[],\"nextPageToken\":null,\"nextPageUrl\":null,\"total\":0}},\"edit\":{\"isEditRestricted\":false,\"isEditableByMeUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nGgXKCA0/capabilities/edit/is-editable-by-me\",\"lastEditedBy\":null,\"lastEditedDate\":null,\"latestRevision\":1,\"relativeLastEditedDate\":null},\"interactions\":{\"count\":0},\"mute\":{\"isMutedByMe\":false},\"readBy\":{\"isReadByMe\":true,\"lastReadDateByMe\":\"2018-09-19T14:07:43.000Z\",\"page\":null},\"status\":{\"feedEntityStatus\":\"Published\",\"isApprovableByMe\":false},\"topics\":{\"canAssignTopics\":true,\"items\":[]},\"upDownVote\":{\"downVoteCount\":0,\"myVote\":\"None\",\"upVoteCount\":0}},\"clientInfo\":{\"applicationName\":\"Import New Submissions\",\"applicationUrl\":null},\"createdDate\":\"2018-09-19T14:07:43.000Z\",\"event\":false,\"feedElementType\":\"FeedItem\",\"hasVerifiedComment\":false,\"header\":{\"isRichText\":null,\"messageSegments\":[{\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"reference\":{\"id\":\"005f4000002lRcqAAE\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRcqAAE\"},\"text\":\"Daria Tupchiy\",\"type\":\"EntityLink\"},{\"text\":\" to Arcarius Funding LLC Only\",\"type\":\"Text\"}],\"text\":\"Daria Tupchiy to Arcarius Funding LLC Only\"},\"id\":\"0D5f400000nGgXKCA0\",\"isDeleteRestricted\":false,\"isSharable\":false,\"modifiedDate\":\"2018-09-19T14:07:43.000Z\",\"originalFeedItem\":null,\"originalFeedItemActor\":null,\"parent\":{\"entityLabel\":{\"label\":\"Opportunity\",\"labelPlural\":\"Deals\"},\"id\":\"006f400000Ec3PLAAZ\",\"motif\":{\"color\":\"FCB95B\",\"largeIconUrl\":\"/img/icon/opportunities64.png\",\"mediumIconUrl\":\"/img/icon/opportunities32.png\",\"smallIconUrl\":\"/img/icon/opportunities16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"DARR GROUP LLC - 9/19/2018 - 1\",\"type\":\"Opportunity\",\"url\":\"/services/data/v43.0/chatter/records/006f400000Ec3PLAAZ\"},\"photoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"relativeCreatedDate\":\"Just now\",\"type\":\"TextPost\",\"url\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nGgXKCA0\",\"visibility\":\"InternalUsers\"})\n\n lead generated",
             "errors" : [
             ]
           }
@@ -31,14 +61,59 @@
       ]
     },
     {
-      "id" : "006f400000CQ3nVuAAL",
-      "name" : "Spring Boot - 8/23/2018 - 1",
+      "id" : "006f400000Ec3QxAAJ",
+      "name" : "Village Ain & Electric Inc - 9/19/2018 - 1",
       "stages" : [
+        {
+          "name" : "DocumentsDownloaded",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Inbox\\Wells Fargo\\WF statement 6-18(006f400000Ec3QxAAJ).pdf\nInbox\\Wells Fargo\\app(006f400000Ec3QxAAJ).pdf\nInbox\\Wells Fargo\\WF statement 7-18(006f400000Ec3QxAAJ).pdf\nInbox\\Wells Fargo\\WF statement 8-18(006f400000Ec3QxAAJ).pdf",
+            "errors" : [
+            ]
+          }
+        },
         {
           "name" : "FilesAttached",
           "stageStatus" : {
             "statusStr" : "CompletedStStatus",
-            "log" : "List((Attachment(00Pf4000006KSp2EAG,April 2018 File.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/April 2018 File<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSp7EAG,Jun 2018 File.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/Jun 2018 File<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSpCEAW,BANK MARCH 2018 DAILY.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/BANK MARCH 2018 DAILY<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSikEAG,BKJDLN.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/BKJDLN<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSr8EAG,DL.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/DL<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSr3EAG,VC.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/VC<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KShhEAG,CCR.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/CCR<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KShcEAG,APP ELITE STRYDER 8-21-18.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/APP ELITE STRYDER 8-21-18<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSosEAG,July 2018 File.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/July 2018 File<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSoxEAG,May 2018 File.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/May 2018 File<006f400000CQnVuAAL>.pdf)), (Attachment(00Pf4000006KSj9EAG,BKJDLN.pdf,005f40000033trDAAQ,006f400000CQnVuAAL),Right(Inbox/006f400000CQnVuAAL/BKJDLN<006f400000CQnVuAAL>.pdf)))",
+            "log" : "fixed from web",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "IntegrityValidated",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Success(The operation completed successfully) Bank Name  | Correct Ones | All Ones | %   \n ---------- | ------------ | -------- | --- \n WellsFargo | 6            | 6        | 100 \n N/A \n --- ",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "AccountChosen",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "fixed from web",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "SubmissionValidated",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "everything ok",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "ExportedToSF",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "https://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxKvEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxL0EAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxL5EAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZSYgEAO\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZSYlEAO\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZSYqEAO\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VupSAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VupXAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VupcAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuphAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VupmAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuprAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VupwAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003Vuq1AAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003Vuq6AAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuqBAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuqGAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuqLAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuqQAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuqVAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuqHAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuqaAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuqfAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuqkAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuquAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuqzAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003Vur4AAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003Vur9AAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VurEAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VurJAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VurOAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VurTAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VurYAAS\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VurdAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VuriAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VurnAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VursAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VurxAAC\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTaGAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTaLAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTaQAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTaVAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTaaAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTafAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTakAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTapAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTauAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTazAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTb4AAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTb9AAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/Opportunity/006f400000Ec3QxAAJ => Right()\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/chatter/feed-elements => Right({\"actor\":{\"additionalLabel\":null,\"communityNickname\":\"daria\",\"companyName\":\"Arcarius Funding LLC\",\"displayName\":\"Daria Tupchiy\",\"firstName\":\"Daria\",\"id\":\"005f4000002lRcqAAE\",\"isActive\":true,\"isInThisCommunity\":true,\"lastName\":\"Tupchiy\",\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Daria Tupchiy\",\"outOfOffice\":{\"message\":\"\"},\"photo\":{\"fullEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_200_v2.png?fromEmail=1\",\"largePhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/F\",\"mediumPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/M\",\"photoVersionId\":null,\"smallPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"standardEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_45_v2.png?fromEmail=1\",\"url\":\"/services/data/v43.0/connect/user-profiles/005f4000002lRcqAAE/photo\"},\"reputation\":null,\"stamps\":[],\"title\":\"Analyst\",\"type\":\"User\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRcqAAE\",\"userType\":\"Internal\"},\"body\":{\"isRichText\":false,\"messageSegments\":[{\"accessible\":true,\"name\":\"Iryna Komanda\",\"record\":{\"additionalLabel\":null,\"communityNickname\":\"iryna\",\"companyName\":\"Arcarius Funding LLC\",\"displayName\":\"Iryna Komanda\",\"firstName\":\"Iryna\",\"id\":\"005f4000002lRYeAAM\",\"isActive\":true,\"isInThisCommunity\":true,\"lastName\":\"Komanda\",\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Iryna Komanda\",\"outOfOffice\":{\"message\":\"\"},\"photo\":{\"fullEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/ncsphoto/YBFHZSl2jmQm4tcw3MTg1M0NLVhrOqNTV-iTDZU0cuy0Hl2nYfckYj-MTC3yk_0PbeS6f4XSzgInqdWtuMuVDQ%3D%3D?fromEmail=1\",\"largePhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000CwdE/F\",\"mediumPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000CwdE/M\",\"photoVersionId\":\"729f4000000CwdEAAS\",\"smallPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000CwdE/T\",\"standardEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/ncsphoto/YBFHZSl2jmQm4tcw3MTg1M0NLVhrOqNTV-iTDZU0cuxxMP9r1thrAH3On3M7XfBx-B4yXyHfEGldbPMVE754jw%3D%3D?fromEmail=1\",\"url\":\"/services/data/v43.0/connect/user-profiles/005f4000002lRYeAAM/photo\"},\"reputation\":null,\"stamps\":[],\"title\":\"Analyst\",\"type\":\"User\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRYeAAM\",\"userType\":\"Internal\"},\"text\":\"@Iryna Komanda\",\"type\":\"Mention\"},{\"text\":\" statements uploaded\",\"type\":\"Text\"}],\"text\":\"@Iryna Komanda statements uploaded\"},\"capabilities\":{\"associatedActions\":{\"platformActionGroups\":[]},\"bookmarks\":{\"isBookmarkedByCurrentUser\":false},\"chatterLikes\":{\"isLikedByCurrentUser\":false,\"likesMessage\":null,\"myLike\":null,\"page\":{\"currentPageToken\":0,\"currentPageUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nGzxcCAC/capabilities/chatter-likes/items\",\"items\":[],\"nextPageToken\":null,\"nextPageUrl\":null,\"previousPageToken\":null,\"previousPageUrl\":null,\"total\":0}},\"close\":{\"canContextUserUpdateIsClosed\":false,\"isClosed\":false},\"comments\":{\"page\":{\"currentPageToken\":null,\"currentPageUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nGzxcCAC/capabilities/comments/items\",\"items\":[],\"nextPageToken\":null,\"nextPageUrl\":null,\"total\":0}},\"edit\":{\"isEditRestricted\":false,\"isEditableByMeUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nGzxcCAC/capabilities/edit/is-editable-by-me\",\"lastEditedBy\":null,\"lastEditedDate\":null,\"latestRevision\":1,\"relativeLastEditedDate\":null},\"interactions\":{\"count\":0},\"mute\":{\"isMutedByMe\":false},\"readBy\":{\"isReadByMe\":true,\"lastReadDateByMe\":\"2018-09-19T14:27:05.000Z\",\"page\":null},\"status\":{\"feedEntityStatus\":\"Published\",\"isApprovableByMe\":false},\"topics\":{\"canAssignTopics\":true,\"items\":[]},\"upDownVote\":{\"downVoteCount\":0,\"myVote\":\"None\",\"upVoteCount\":0}},\"clientInfo\":{\"applicationName\":\"Import New Submissions\",\"applicationUrl\":null},\"createdDate\":\"2018-09-19T14:27:05.000Z\",\"event\":false,\"feedElementType\":\"FeedItem\",\"hasVerifiedComment\":false,\"header\":{\"isRichText\":null,\"messageSegments\":[{\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"reference\":{\"id\":\"005f4000002lRcqAAE\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRcqAAE\"},\"text\":\"Daria Tupchiy\",\"type\":\"EntityLink\"},{\"text\":\" to Arcarius Funding LLC Only\",\"type\":\"Text\"}],\"text\":\"Daria Tupchiy to Arcarius Funding LLC Only\"},\"id\":\"0D5f400000nGzxcCAC\",\"isDeleteRestricted\":false,\"isSharable\":false,\"modifiedDate\":\"2018-09-19T14:27:05.000Z\",\"originalFeedItem\":null,\"originalFeedItemActor\":null,\"parent\":{\"entityLabel\":{\"label\":\"Opportunity\",\"labelPlural\":\"Deals\"},\"id\":\"006f400000Ec3QxAAJ\",\"motif\":{\"color\":\"FCB95B\",\"largeIconUrl\":\"/img/icon/opportunities64.png\",\"mediumIconUrl\":\"/img/icon/opportunities32.png\",\"smallIconUrl\":\"/img/icon/opportunities16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Village Air &amp; Electric Inc - 9/19/2018 - 1\",\"type\":\"Opportunity\",\"url\":\"/services/data/v43.0/chatter/records/006f400000Ec3QxAAJ\"},\"photoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"relativeCreatedDate\":\"Just now\",\"type\":\"TextPost\",\"url\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nGzxcCAC\",\"visibility\":\"InternalUsers\"})\n\n lead generated",
             "errors" : [
             ]
           }
@@ -46,14 +121,299 @@
       ]
     },
     {
-      "id" : "006f400000CQnvxAAD",
-      "name" : "Charak Center for Health and Wellness - 8/23/2018 - 1",
+      "id" : "006f400000Ec3l2AAB",
+      "name" : "VERCON DEVELOPMENT LLC - 9/19/2018 - 1",
       "stages" : [
         {
-          "name" : "AdvancesChecked",
+          "name" : "DocumentsDownloaded",
           "stageStatus" : {
             "statusStr" : "CompletedStStatus",
-            "log" : "List((Attachment(00Pf4000006KZBBEA4,8-1 - 8-21 STMT.CSV,005f4000001aJNXAA2,006f400000CQnvxAAD),Right(Inbox\\006f400000CQnvxAAD\\8-1 - 8-21 STMT.CSV)), (Attachment(00Pf4000006KZCIEA4,6 Jun 2018 STMT.PDF,005f4000001aJNXAA2,006f400000CQnvxAAD),Right(Inbox\\006f400000CQnvxAAD\\6 Jun 2018 STMT.PDF)), (Attachment(00Pf4000006KZCNEA4,5 May 2018 STMT.PDF,005f4000001aJNXAA2,006f400000CQnvxAAD),Right(Inbox\\006f400000CQnvxAAD\\5 May 2018 STMT.PDF)), (Attachment(00Pf4000006KZCOEA4,8-21-18 FCS CAPITAL APP.PDF,005f4000001aJNXAA2,006f400000CQnvxAAD),Right(Inbox\\006f400000CQnvxAAD\\8-21-18 FCS CAPITAL APP.PDF)), (Attachment(00Pf4000006KZCDEA4,7 Jul 2018 STMT.PDF,005f4000001aJNXAA2,006f400000CQnvxAAD),Right(Inbox\\006f400000CQnvxAAD\\7 Jul 2018 STMT.PDF)))",
+            "log" : "Inbox\\Chase\\Apr 18(006f400000Ec3l2AAB).pdf\nInbox\\Chase\\Jan 18(006f400000Ec3l2AAB).pdf\nInbox\\Chase\\Jun 18(006f400000Ec3l2AAB).pdf\nInbox\\Chase\\Mar 18(006f400000Ec3l2AAB).pdf\nInbox\\Chase\\May 18(006f400000Ec3l2AAB).pdf\nInbox\\Chase\\Jul 18(006f400000Ec3l2AAB).pdf\nInbox\\Chase\\Vercon Development app(006f400000Ec3l2AAB).pdf\nInbox\\Chase\\Aug 18(006f400000Ec3l2AAB).pdf\nInbox\\Chase\\Feb 18(006f400000Ec3l2AAB).pdf",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "FilesAttached",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "fixed from web",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "IntegrityValidated",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Success(The operation completed successfully) Bank Name | Correct Ones | All Ones | %   \n --------- | ------------ | -------- | --- \n Chase     | 3            | 3        | 100 \n N/A \n --- ",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "AccountChosen",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "SubmissionValidated",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "everything ok",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "ExportedToSF",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "https://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxLyEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxM3EAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxM8EAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZoP1EAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZoP6EAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZoPBEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvDeAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvDGAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvDjAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvDoAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvDtAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvDyAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvE3AAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Left(org.http4s.client.UnexpectedStatus: unexpected HTTP status: 400 Bad Request)\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvE8AAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvEDAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTcCAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTcHAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTcMAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTcRAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTcWAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTcbAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTcgAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTclAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTcqAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTcvAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTd0AAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTd5AAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdAAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdFAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdKAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdPAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdUAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/Opportunity/006f400000Ec3l2AAB => Right()\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/chatter/feed-elements => Right({\"actor\":{\"additionalLabel\":null,\"communityNickname\":\"daria\",\"companyName\":\"Arcarius Funding LLC\",\"displayName\":\"Daria Tupchiy\",\"firstName\":\"Daria\",\"id\":\"005f4000002lRcqAAE\",\"isActive\":true,\"isInThisCommunity\":true,\"lastName\":\"Tupchiy\",\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Daria Tupchiy\",\"outOfOffice\":{\"message\":\"\"},\"photo\":{\"fullEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_200_v2.png?fromEmail=1\",\"largePhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/F\",\"mediumPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/M\",\"photoVersionId\":null,\"smallPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"standardEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_45_v2.png?fromEmail=1\",\"url\":\"/services/data/v43.0/connect/user-profiles/005f4000002lRcqAAE/photo\"},\"reputation\":null,\"stamps\":[],\"title\":\"Analyst\",\"type\":\"User\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRcqAAE\",\"userType\":\"Internal\"},\"body\":{\"isRichText\":false,\"messageSegments\":[{\"accessible\":true,\"name\":\"Wilson Hidalgo\",\"record\":{\"additionalLabel\":null,\"communityNickname\":\"WHidalgo\",\"companyName\":\"Arcarius Funding LLC\",\"displayName\":\"Wilson Hidalgo\",\"firstName\":\"Wilson\",\"id\":\"005f40000033trDAAQ\",\"isActive\":true,\"isInThisCommunity\":true,\"lastName\":\"Hidalgo\",\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Wilson Hidalgo\",\"outOfOffice\":{\"message\":\"\"},\"photo\":{\"fullEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/ncsphoto/YBFHZSl2jmQm4tcw3MTg1OVKvC5WBIhSfMWGarOGlJ5-j8Hep6Jh0IEQNlfHd6h5Kd1xdACl5Jr0y6W5z_SY-w%3D%3D?fromEmail=1\",\"largePhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000LFYf/F\",\"mediumPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000LFYf/M\",\"photoVersionId\":\"729f4000000LFYfAAO\",\"smallPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000LFYf/T\",\"standardEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/ncsphoto/YBFHZSl2jmQm4tcw3MTg1OVKvC5WBIhSfMWGarOGlJ73BnMFdWPulUxnqjTticnqf9le7u7u4E2Yh60UbhE_mw%3D%3D?fromEmail=1\",\"url\":\"/services/data/v43.0/connect/user-profiles/005f40000033trDAAQ/photo\"},\"reputation\":null,\"stamps\":[],\"title\":\"Analyst\",\"type\":\"User\",\"url\":\"/services/data/v43.0/chatter/users/005f40000033trDAAQ\",\"userType\":\"Internal\"},\"text\":\"@Wilson Hidalgo\",\"type\":\"Mention\"},{\"text\":\" statements uploaded\",\"type\":\"Text\"}],\"text\":\"@Wilson Hidalgo statements uploaded\"},\"capabilities\":{\"associatedActions\":{\"platformActionGroups\":[]},\"bookmarks\":{\"isBookmarkedByCurrentUser\":false},\"chatterLikes\":{\"isLikedByCurrentUser\":false,\"likesMessage\":null,\"myLike\":null,\"page\":{\"currentPageToken\":0,\"currentPageUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHfJYCA0/capabilities/chatter-likes/items\",\"items\":[],\"nextPageToken\":null,\"nextPageUrl\":null,\"previousPageToken\":null,\"previousPageUrl\":null,\"total\":0}},\"close\":{\"canContextUserUpdateIsClosed\":false,\"isClosed\":false},\"comments\":{\"page\":{\"currentPageToken\":null,\"currentPageUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHfJYCA0/capabilities/comments/items\",\"items\":[],\"nextPageToken\":null,\"nextPageUrl\":null,\"total\":0}},\"edit\":{\"isEditRestricted\":false,\"isEditableByMeUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHfJYCA0/capabilities/edit/is-editable-by-me\",\"lastEditedBy\":null,\"lastEditedDate\":null,\"latestRevision\":1,\"relativeLastEditedDate\":null},\"interactions\":{\"count\":0},\"mute\":{\"isMutedByMe\":false},\"readBy\":{\"isReadByMe\":true,\"lastReadDateByMe\":\"2018-09-19T15:28:30.000Z\",\"page\":null},\"status\":{\"feedEntityStatus\":\"Published\",\"isApprovableByMe\":false},\"topics\":{\"canAssignTopics\":true,\"items\":[]},\"upDownVote\":{\"downVoteCount\":0,\"myVote\":\"None\",\"upVoteCount\":0}},\"clientInfo\":{\"applicationName\":\"Import New Submissions\",\"applicationUrl\":null},\"createdDate\":\"2018-09-19T15:28:30.000Z\",\"event\":false,\"feedElementType\":\"FeedItem\",\"hasVerifiedComment\":false,\"header\":{\"isRichText\":null,\"messageSegments\":[{\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"reference\":{\"id\":\"005f4000002lRcqAAE\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRcqAAE\"},\"text\":\"Daria Tupchiy\",\"type\":\"EntityLink\"},{\"text\":\" to Arcarius Funding LLC Only\",\"type\":\"Text\"}],\"text\":\"Daria Tupchiy to Arcarius Funding LLC Only\"},\"id\":\"0D5f400000nHfJYCA0\",\"isDeleteRestricted\":false,\"isSharable\":false,\"modifiedDate\":\"2018-09-19T15:28:30.000Z\",\"originalFeedItem\":null,\"originalFeedItemActor\":null,\"parent\":{\"entityLabel\":{\"label\":\"Opportunity\",\"labelPlural\":\"Deals\"},\"id\":\"006f400000Ec3l2AAB\",\"motif\":{\"color\":\"FCB95B\",\"largeIconUrl\":\"/img/icon/opportunities64.png\",\"mediumIconUrl\":\"/img/icon/opportunities32.png\",\"smallIconUrl\":\"/img/icon/opportunities16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"VERCON DEVELOPMENT LLC - 9/19/2018 - 1\",\"type\":\"Opportunity\",\"url\":\"/services/data/v43.0/chatter/records/006f400000Ec3l2AAB\"},\"photoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"relativeCreatedDate\":\"Just now\",\"type\":\"TextPost\",\"url\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHfJYCA0\",\"visibility\":\"InternalUsers\"})\n\n lead generated",
+            "errors" : [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id" : "006f400000Ec3mFAAR",
+      "name" : "Aichele Trucking - 9/19/2018 - 1",
+      "stages" : [
+        {
+          "name" : "DocumentsDownloaded",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Inbox\\Wells Fargo Bank\\july devil(006f400000Ec3mFAAR).pdf\nInbox\\Wells Fargo Bank\\june devil(006f400000Ec3mFAAR).pdf\nInbox\\Wells Fargo Bank\\augast devil(006f400000Ec3mFAAR).pdf\nInbox\\Wells Fargo Bank\\a2(006f400000Ec3mFAAR).pdf",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "FilesAttached",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "CSV1\\WellsFargo\\augast devil(006f400000Ec3mFAAR)\nCSV1\\WellsFargo\\july devil(006f400000Ec3mFAAR)\nCSV1\\WellsFargo\\june devil(006f400000Ec3mFAAR)",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "IntegrityValidated",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Success(The operation completed successfully) Bank Name  | Correct Ones | All Ones | %   \n ---------- | ------------ | -------- | --- \n WellsFargo | 3            | 3        | 100 \n N/A \n --- ",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "AccountChosen",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "SubmissionValidated",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "everything ok",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "ExportedToSF",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "https://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxMDEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZoPGEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZoPLEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZoPQEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvGEAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvGJAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvGOAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvGTAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvGYAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvGdAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvGiAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvGnAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvGsAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvGxAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvH2AAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvHCAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvHHAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvHMAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvHRAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvHWAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvHbAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvHgAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvHlAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvHqAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvHvAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvI0AAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvI5AAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvIAAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvIFAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvIKAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvIPAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvIUAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvIZAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvIeAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvIjAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdZAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdeAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdjAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdoAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdtAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTdyAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTe3AAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTe8AAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTeDAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTeIAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTeNAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTeSAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTeXAAW\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTecAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTehAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTemAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTerAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/Opportunity/006f400000Ec3mFAAR => Right()\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/chatter/feed-elements => Right({\"actor\":{\"additionalLabel\":null,\"communityNickname\":\"daria\",\"companyName\":\"Arcarius Funding LLC\",\"displayName\":\"Daria Tupchiy\",\"firstName\":\"Daria\",\"id\":\"005f4000002lRcqAAE\",\"isActive\":true,\"isInThisCommunity\":true,\"lastName\":\"Tupchiy\",\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Daria Tupchiy\",\"outOfOffice\":{\"message\":\"\"},\"photo\":{\"fullEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_200_v2.png?fromEmail=1\",\"largePhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/F\",\"mediumPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/M\",\"photoVersionId\":null,\"smallPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"standardEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_45_v2.png?fromEmail=1\",\"url\":\"/services/data/v43.0/connect/user-profiles/005f4000002lRcqAAE/photo\"},\"reputation\":null,\"stamps\":[],\"title\":\"Analyst\",\"type\":\"User\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRcqAAE\",\"userType\":\"Internal\"},\"body\":{\"isRichText\":false,\"messageSegments\":[{\"accessible\":true,\"name\":\"Marcio Coello\",\"record\":{\"additionalLabel\":null,\"communityNickname\":\"Marcio\",\"companyName\":null,\"displayName\":\"Marcio Coello\",\"firstName\":\"Marcio\",\"id\":\"005f4000002kD49AAE\",\"isActive\":true,\"isInThisCommunity\":true,\"lastName\":\"Coello\",\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Marcio Coello\",\"outOfOffice\":{\"message\":\"\"},\"photo\":{\"fullEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_200_v2.png?fromEmail=1\",\"largePhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/F\",\"mediumPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/M\",\"photoVersionId\":null,\"smallPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"standardEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_45_v2.png?fromEmail=1\",\"url\":\"/services/data/v43.0/connect/user-profiles/005f4000002kD49AAE/photo\"},\"reputation\":null,\"stamps\":[],\"title\":\"Pre-Underwriting Analyst\",\"type\":\"User\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002kD49AAE\",\"userType\":\"Internal\"},\"text\":\"@Marcio Coello\",\"type\":\"Mention\"},{\"text\":\" statements uploaded\",\"type\":\"Text\"}],\"text\":\"@Marcio Coello statements uploaded\"},\"capabilities\":{\"associatedActions\":{\"platformActionGroups\":[]},\"bookmarks\":{\"isBookmarkedByCurrentUser\":false},\"chatterLikes\":{\"isLikedByCurrentUser\":false,\"likesMessage\":null,\"myLike\":null,\"page\":{\"currentPageToken\":0,\"currentPageUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHfuACAS/capabilities/chatter-likes/items\",\"items\":[],\"nextPageToken\":null,\"nextPageUrl\":null,\"previousPageToken\":null,\"previousPageUrl\":null,\"total\":0}},\"close\":{\"canContextUserUpdateIsClosed\":false,\"isClosed\":false},\"comments\":{\"page\":{\"currentPageToken\":null,\"currentPageUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHfuACAS/capabilities/comments/items\",\"items\":[],\"nextPageToken\":null,\"nextPageUrl\":null,\"total\":0}},\"edit\":{\"isEditRestricted\":false,\"isEditableByMeUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHfuACAS/capabilities/edit/is-editable-by-me\",\"lastEditedBy\":null,\"lastEditedDate\":null,\"latestRevision\":1,\"relativeLastEditedDate\":null},\"interactions\":{\"count\":0},\"mute\":{\"isMutedByMe\":false},\"readBy\":{\"isReadByMe\":true,\"lastReadDateByMe\":\"2018-09-19T15:33:28.000Z\",\"page\":null},\"status\":{\"feedEntityStatus\":\"Published\",\"isApprovableByMe\":false},\"topics\":{\"canAssignTopics\":true,\"items\":[]},\"upDownVote\":{\"downVoteCount\":0,\"myVote\":\"None\",\"upVoteCount\":0}},\"clientInfo\":{\"applicationName\":\"Import New Submissions\",\"applicationUrl\":null},\"createdDate\":\"2018-09-19T15:33:28.000Z\",\"event\":false,\"feedElementType\":\"FeedItem\",\"hasVerifiedComment\":false,\"header\":{\"isRichText\":null,\"messageSegments\":[{\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"reference\":{\"id\":\"005f4000002lRcqAAE\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRcqAAE\"},\"text\":\"Daria Tupchiy\",\"type\":\"EntityLink\"},{\"text\":\" to Arcarius Funding LLC Only\",\"type\":\"Text\"}],\"text\":\"Daria Tupchiy to Arcarius Funding LLC Only\"},\"id\":\"0D5f400000nHfuACAS\",\"isDeleteRestricted\":false,\"isSharable\":false,\"modifiedDate\":\"2018-09-19T15:33:28.000Z\",\"originalFeedItem\":null,\"originalFeedItemActor\":null,\"parent\":{\"entityLabel\":{\"label\":\"Opportunity\",\"labelPlural\":\"Deals\"},\"id\":\"006f400000Ec3mFAAR\",\"motif\":{\"color\":\"FCB95B\",\"largeIconUrl\":\"/img/icon/opportunities64.png\",\"mediumIconUrl\":\"/img/icon/opportunities32.png\",\"smallIconUrl\":\"/img/icon/opportunities16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Aichele Trucking - 9/19/2018 - 1\",\"type\":\"Opportunity\",\"url\":\"/services/data/v43.0/chatter/records/006f400000Ec3mFAAR\"},\"photoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"relativeCreatedDate\":\"Just now\",\"type\":\"TextPost\",\"url\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHfuACAS\",\"visibility\":\"InternalUsers\"})\n\n lead generated",
+            "errors" : [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id" : "006f400000Ec3irAAB",
+      "name" : "Kotar Data Recovery - 9/19/2018 - 5",
+      "stages" : [
+        {
+          "name" : "DocumentsDownloaded",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Inbox\\Chase Bank\\app(006f400000Ec3irAAB).pdf\nInbox\\Chase Bank\\Chase August 2018(006f400000Ec3irAAB).pdf\nInbox\\Chase Bank\\Pay off letters(006f400000Ec3irAAB).pdf\nInbox\\Chase Bank\\Chase June 2018(006f400000Ec3irAAB).pdf\nInbox\\Chase Bank\\Chase July 2018(006f400000Ec3irAAB).pdf",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "FilesAttached",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "CSV1\\Chase\\Chase August 2018(006f400000Ec3irAAB)\nCSV1\\Chase\\Chase July 2018(006f400000Ec3irAAB)",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "IntegrityValidated",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Success(The operation completed successfully) Bank Name | Correct Ones | All Ones | %   \n --------- | ------------ | -------- | --- \n Chase     | 2            | 2        | 100 \n N/A \n --- ",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "AccountChosen",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "SubmissionValidated",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "everything ok",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "ExportedToSF",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "https://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxMSEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxMXEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxMcEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxMhEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxMmEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxMrEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxMwEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxMTEA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Loan_Balance__c/ => Right({\"id\":\"a0Xf4000001XxN1EAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZpKbEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Bank_Account__c/ => Right({\"id\":\"a0Qf4000005ZpKgEAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvLYAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvLdAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvLiAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvLnAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvLsAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvLxAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvM2AAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvM7AAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvMCAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvMHAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvMMAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvMRAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvMWAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvMbAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvMgAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvMlAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvMqAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvMvAAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvN0AAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvN5AAK\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Receivable__c/ => Right({\"id\":\"a0ef4000003VvNFAA0\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTfkAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTfpAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTfuAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTfzAAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/McaApp__Payable__c/ => Right({\"id\":\"a0bf4000004LTg4AAG\",\"success\":true,\"errors\":[]})\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/sobjects/Opportunity/006f400000Ec3irAAB => Right()\n\nhttps://arcariusfunding.my.salesforce.com/services/data/v43.0/chatter/feed-elements => Right({\"actor\":{\"additionalLabel\":null,\"communityNickname\":\"daria\",\"companyName\":\"Arcarius Funding LLC\",\"displayName\":\"Daria Tupchiy\",\"firstName\":\"Daria\",\"id\":\"005f4000002lRcqAAE\",\"isActive\":true,\"isInThisCommunity\":true,\"lastName\":\"Tupchiy\",\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Daria Tupchiy\",\"outOfOffice\":{\"message\":\"\"},\"photo\":{\"fullEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_200_v2.png?fromEmail=1\",\"largePhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/F\",\"mediumPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/M\",\"photoVersionId\":null,\"smallPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"standardEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/img/userprofile/default_profile_45_v2.png?fromEmail=1\",\"url\":\"/services/data/v43.0/connect/user-profiles/005f4000002lRcqAAE/photo\"},\"reputation\":null,\"stamps\":[],\"title\":\"Analyst\",\"type\":\"User\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRcqAAE\",\"userType\":\"Internal\"},\"body\":{\"isRichText\":false,\"messageSegments\":[{\"accessible\":true,\"name\":\"Iryna Komanda\",\"record\":{\"additionalLabel\":null,\"communityNickname\":\"iryna\",\"companyName\":\"Arcarius Funding LLC\",\"displayName\":\"Iryna Komanda\",\"firstName\":\"Iryna\",\"id\":\"005f4000002lRYeAAM\",\"isActive\":true,\"isInThisCommunity\":true,\"lastName\":\"Komanda\",\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Iryna Komanda\",\"outOfOffice\":{\"message\":\"\"},\"photo\":{\"fullEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/ncsphoto/YBFHZSl2jmQm4tcw3MTg1M0NLVhrOqNTV-iTDZU0cuy0Hl2nYfckYj-MTC3yk_0PbeS6f4XSzgInqdWtuMuVDQ%3D%3D?fromEmail=1\",\"largePhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000CwdE/F\",\"mediumPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000CwdE/M\",\"photoVersionId\":\"729f4000000CwdEAAS\",\"smallPhotoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/729f4000000CwdE/T\",\"standardEmailPhotoUrl\":\"https://arcariusfunding.my.salesforce.com/ncsphoto/YBFHZSl2jmQm4tcw3MTg1M0NLVhrOqNTV-iTDZU0cuxxMP9r1thrAH3On3M7XfBx-B4yXyHfEGldbPMVE754jw%3D%3D?fromEmail=1\",\"url\":\"/services/data/v43.0/connect/user-profiles/005f4000002lRYeAAM/photo\"},\"reputation\":null,\"stamps\":[],\"title\":\"Analyst\",\"type\":\"User\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRYeAAM\",\"userType\":\"Internal\"},\"text\":\"@Iryna Komanda\",\"type\":\"Mention\"},{\"text\":\" statements uploaded\",\"type\":\"Text\"}],\"text\":\"@Iryna Komanda statements uploaded\"},\"capabilities\":{\"associatedActions\":{\"platformActionGroups\":[]},\"bookmarks\":{\"isBookmarkedByCurrentUser\":false},\"chatterLikes\":{\"isLikedByCurrentUser\":false,\"likesMessage\":null,\"myLike\":null,\"page\":{\"currentPageToken\":0,\"currentPageUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHhoJCAS/capabilities/chatter-likes/items\",\"items\":[],\"nextPageToken\":null,\"nextPageUrl\":null,\"previousPageToken\":null,\"previousPageUrl\":null,\"total\":0}},\"close\":{\"canContextUserUpdateIsClosed\":false,\"isClosed\":false},\"comments\":{\"page\":{\"currentPageToken\":null,\"currentPageUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHhoJCAS/capabilities/comments/items\",\"items\":[],\"nextPageToken\":null,\"nextPageUrl\":null,\"total\":0}},\"edit\":{\"isEditRestricted\":false,\"isEditableByMeUrl\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHhoJCAS/capabilities/edit/is-editable-by-me\",\"lastEditedBy\":null,\"lastEditedDate\":null,\"latestRevision\":1,\"relativeLastEditedDate\":null},\"interactions\":{\"count\":0},\"mute\":{\"isMutedByMe\":false},\"readBy\":{\"isReadByMe\":true,\"lastReadDateByMe\":\"2018-09-19T15:38:35.000Z\",\"page\":null},\"status\":{\"feedEntityStatus\":\"Published\",\"isApprovableByMe\":false},\"topics\":{\"canAssignTopics\":true,\"items\":[]},\"upDownVote\":{\"downVoteCount\":0,\"myVote\":\"None\",\"upVoteCount\":0}},\"clientInfo\":{\"applicationName\":\"Import New Submissions\",\"applicationUrl\":null},\"createdDate\":\"2018-09-19T15:38:35.000Z\",\"event\":false,\"feedElementType\":\"FeedItem\",\"hasVerifiedComment\":false,\"header\":{\"isRichText\":null,\"messageSegments\":[{\"motif\":{\"color\":\"65CAE4\",\"largeIconUrl\":\"/img/icon/profile64.png\",\"mediumIconUrl\":\"/img/icon/profile32.png\",\"smallIconUrl\":\"/img/icon/profile16.png\",\"svgIconUrl\":null},\"reference\":{\"id\":\"005f4000002lRcqAAE\",\"url\":\"/services/data/v43.0/chatter/users/005f4000002lRcqAAE\"},\"text\":\"Daria Tupchiy\",\"type\":\"EntityLink\"},{\"text\":\" to Arcarius Funding LLC Only\",\"type\":\"Text\"}],\"text\":\"Daria Tupchiy to Arcarius Funding LLC Only\"},\"id\":\"0D5f400000nHhoJCAS\",\"isDeleteRestricted\":false,\"isSharable\":false,\"modifiedDate\":\"2018-09-19T15:38:35.000Z\",\"originalFeedItem\":null,\"originalFeedItemActor\":null,\"parent\":{\"entityLabel\":{\"label\":\"Opportunity\",\"labelPlural\":\"Deals\"},\"id\":\"006f400000Ec3irAAB\",\"motif\":{\"color\":\"FCB95B\",\"largeIconUrl\":\"/img/icon/opportunities64.png\",\"mediumIconUrl\":\"/img/icon/opportunities32.png\",\"smallIconUrl\":\"/img/icon/opportunities16.png\",\"svgIconUrl\":null},\"mySubscription\":null,\"name\":\"Kotar Data Recovery - 9/19/2018 - 5\",\"type\":\"Opportunity\",\"url\":\"/services/data/v43.0/chatter/records/006f400000Ec3irAAB\"},\"photoUrl\":\"https://arcariusfunding--c.na59.content.force.com/profilephoto/005/T\",\"relativeCreatedDate\":\"Just now\",\"type\":\"TextPost\",\"url\":\"/services/data/v43.0/chatter/feed-elements/0D5f400000nHhoJCAS\",\"visibility\":\"InternalUsers\"})\n\n lead generated",
+            "errors" : [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id" : "006f400000Ec4FMAAZ",
+      "name" : "Trio Technology LLC - 9/19/2018 - 1",
+      "stages" : [
+        {
+          "name" : "DocumentsDownloaded",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Inbox\\Wells Fargo\\app(006f400000Ec4FMAAZ).pdf\nInbox\\Wells Fargo\\WF_TRIO_201808(006f400000Ec4FMAAZ).pdf\nInbox\\Wells Fargo\\WF_TRIO_201807(006f400000Ec4FMAAZ).pdf\nInbox\\Wells Fargo\\WF_TRIO_201806(006f400000Ec4FMAAZ).pdf",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "FilesAttached",
+          "stageStatus" : {
+            "statusStr" : "NotStartedStStatus",
+            "log" : "",
+            "errors" : [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id" : "006f400000Ec49sAAB",
+      "name" : "Active Ventilation Products - 9/19/2018 - 1",
+      "stages" : [
+        {
+          "name" : "DocumentsDownloaded",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Inbox\\Key Banks\\CCR 1(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\App(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\BS 1483- 08.18(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\BS 1483- 07.18(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\BS 1483- 06.18(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\CCR 2(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\BS 1483- 09.18 MTD(006f400000Ec49sAAB).pdf",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "FilesAttached",
+          "stageStatus" : {
+            "statusStr" : "NotStartedStStatus",
+            "log" : "restart",
+            "errors" : [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id" : "006f400000Ec4gmAAB",
+      "name" : "Chaun Miller Construction - 9/19/2018 - 2",
+      "stages" : [
+        {
+          "name" : "DocumentsDownloaded",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Inbox\\Wells Fargo\\BANK STATEMENT AUG 2018 0505(006f400000Ec4gmAAB).pdf\nInbox\\Wells Fargo\\App(006f400000Ec4gmAAB).pdf\nInbox\\Wells Fargo\\BANKING STATEMENT JULY 0505 2018  PDF.PDF\nInbox\\Wells Fargo\\BANK STATEMENT MAY 2018 0505(006f400000Ec4gmAAB).pdf\nInbox\\Wells Fargo\\BANK STATEMENT JUNE 2018 0505(006f400000Ec4gmAAB).pdf",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "FilesAttached",
+          "stageStatus" : {
+            "statusStr" : "NotStartedStStatus",
+            "log" : "restart",
+            "errors" : [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id" : "006f400000Ec9T2AAJ",
+      "name" : "Tri Cities Orthodontics Specialists - 9/20/2018 - 2",
+      "stages" : [
+        {
+          "name" : "DocumentsDownloaded",
+          "stageStatus" : {
+            "statusStr" : "NotStartedStStatus",
+            "log" : "restart",
+            "errors" : [
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id" : "006f400000Ec9UZAAZ",
+      "name" : "Wilma & Frieda's Cafe - 9/20/2018 - 3",
+      "stages" : [
+        {
+          "name" : "DocumentsDownloaded",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Inbox\\Pacific Premier Bank\\PPBI July 2018 stmt 2382.PDF\nInbox\\Pacific Premier Bank\\PPBI August 2018 Stmt 2382.PDF\nInbox\\Pacific Premier Bank\\PPBI August 2018 Stmt 0037.PDF\nInbox\\Pacific Premier Bank\\App(006f400000Ec9UZAAZ).pdf\nInbox\\Pacific Premier Bank\\CCR - JANICE L ALEXANDER  - 712(006f400000Ec9UZAAZ).pdf\nInbox\\Pacific Premier Bank\\PPBI July 2018 Stmt 0037.PDF\nInbox\\Pacific Premier Bank\\Debt Schedule - Wilma & Frieda's(006f400000Ec9UZAAZ).pdf\nInbox\\Pacific Premier Bank\\CCR - RICHARD K ALEXANDER  - 732(006f400000Ec9UZAAZ).pdf\nInbox\\Pacific Premier Bank\\PPBI June 2018 Stmnt 2382.PDF\nInbox\\Pacific Premier Bank\\PPBI June 2018 Stmt 0037.PDF",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "FilesAttached",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "fixed from web",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "name" : "IntegrityValidated",
+          "stageStatus" : {
+            "statusStr" : "ErrorStStatus",
+            "log" : " Bank Name          | Correct Ones | All Ones | % \n ------------------ | ------------ | -------- | - \n PacificPremierBank | 0            | 3        | 0 \n N/A                | Amounts missed: | Dates Missed: | Wrong transaction sum \n ------------------ | --------------- | ------------- | --------------------- \n PacificPremierBank | 2               | 2             | 3                     \nList(1. Validating document CSV1\\PacificPremierBank\\PPBI August 2018 Stmt 0037 1617180037, Error estimate: 1.2738853503184713,  Error                 | Raw Value     \n --------------------- | ------------- \n Wrong transaction sum | incorrect sum , Amounts missed:\n Table                | Row Num | Raw Val         | Val \n -------------------- | ------- | --------------- | --- \n WithdrawalsAndDebits | 113     | Check No Amount |     \n---------------, Dates Missed:\n Table                | Row Num | Raw Val | Val \n -------------------- | ------- | ------- | --- \n WithdrawalsAndDebits | 90      | mi      |     \n WithdrawalsAndDebits | 91      | mi      |     \n WithdrawalsAndDebits | 113     | Date    |     \n---------------)\n\nT\n\nr\n\na\n\nn\n\ns\n\na\n\nc\n\nt\n\ni\n\no\n\nn\n\n \n\ns\n\nu\n\nm\n\ns\n\n \n\nb\n\ny\n\n \n\nt\n\na\n\nb\n\nl\n\ne\n\n:\n\n\n\n\nT\n\nr\n\na\n\nn\n\ns\n\na\n\nc\n\nt\n\ni\n\no\n\nn\n\ns\n\n \n\nc\n\nh\n\ne\n\nc\n\nk\n\n:\n\n \n\ni\n\nn\n\nc\n\no\n\nr\n\nr\n\ne\n\nc\n\nt\n\n\n\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n\n\n\nT\n\no\n\nt\n\na\n\nl\n\n:\n\n \n\n3\n\n5\n\n5\n\n9\n\n3\n\n.\n\n3\n\n1\n\n \n\n+\n\n \n\n2\n\n3\n\n7\n\n3\n\n0\n\n8\n\n8\n\n7\n\n6\n\n.\n\n3\n\n7\n\n \n\n-\n\n3\n\n0\n\n7\n\n3\n\n0\n\n0\n\n.\n\n5\n\n4\n\n \n\n-\n\n \n\n9\n\n5\n\n6\n\n0\n\n6\n\n.\n\n5\n\n9\n\n \n\n=\n\n \n\n2\n\n3\n\n6\n\n9\n\n4\n\n1\n\n5\n\n6\n\n2\n\n.\n\n5\n\n5\n\n\n\n\nT\n\nr\n\na\n\nn\n\ns\n\na\n\nc\n\nt\n\ni\n\no\n\nn\n\ns\n\n \n\nc\n\nh\n\ne\n\nc\n\nk\n\n:\n\n \n\ni\n\nn\n\nc\n\no\n\nr\n\nr\n\ne\n\nc\n\nt\nList(2. Validating document CSV1\\PacificPremierBank\\PPBI July 2018 Stmt 0037 1617180037, Error estimate: 0.7692307692307693,  Error                 | Raw Value     \n --------------------- | ------------- \n Wrong transaction sum | incorrect sum , Amounts missed:\n Table  | Row Num | Raw Val | Val \n ------ | ------- | ------- | --- \n Checks | 62      |         |     \n---------------)\n\nT\n\nr\n\na\n\nn\n\ns\n\na\n\nc\n\nt\n\ni\n\no\n\nn\n\n \n\ns\n\nu\n\nm\n\ns\n\n \n\nb\n\ny\n\n \n\nt\n\na\n\nb\n\nl\n\ne\n\n:\n\n\n\n\nT\n\nr\n\na\n\nn\n\ns\n\na\n\nc\n\nt\n\ni\n\no\n\nn\n\ns\n\n \n\nc\n\nh\n\ne\n\nc\n\nk\n\n:\n\n \n\ni\n\nn\n\nc\n\no\n\nr\n\nr\n\ne\n\nc\n\nt\n\n\n\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n\n\n\nT\n\no\n\nt\n\na\n\nl\n\n:\n\n \n\n5\n\n8\n\n2\n\n5\n\n.\n\n8\n\n8\n\n \n\n+\n\n \n\n2\n\n5\n\n2\n\n4\n\n8\n\n6\n\n.\n\n1\n\n1\n\n \n\n-\n\n2\n\n2\n\n1\n\n6\n\n4\n\n5\n\n.\n\n8\n\n1\n\n \n\n-\n\n \n\n3\n\n5\n\n5\n\n9\n\n3\n\n.\n\n3\n\n1\n\n \n\n=\n\n \n\n1\n\n0\n\n7\n\n2\n\n.\n\n8\n\n7\n\n\n\n\nT\n\nr\n\na\n\nn\n\ns\n\na\n\nc\n\nt\n\ni\n\no\n\nn\n\ns\n\n \n\nc\n\nh\n\ne\n\nc\n\nk\n\n:\n\n \n\ni\n\nn\n\nc\n\no\n\nr\n\nr\n\ne\n\nc\n\nt\nList(3. Validating document CSV1\\PacificPremierBank\\PPBI June 2018 Stmt 0037 1617180037, Error estimate: 0.8064516129032258,  Error                 | Raw Value     \n --------------------- | ------------- \n Wrong transaction sum | incorrect sum , Dates Missed:\n Table  | Row Num | Raw Val | Val \n ------ | ------- | ------- | --- \n Checks | 59      |         |     \n---------------)\n\nT\n\nr\n\na\n\nn\n\ns\n\na\n\nc\n\nt\n\ni\n\no\n\nn\n\n \n\ns\n\nu\n\nm\n\ns\n\n \n\nb\n\ny\n\n \n\nt\n\na\n\nb\n\nl\n\ne\n\n:\n\n\n\n\nT\n\nr\n\na\n\nn\n\ns\n\na\n\nc\n\nt\n\ni\n\no\n\nn\n\ns\n\n \n\nc\n\nh\n\ne\n\nc\n\nk\n\n:\n\n \n\ni\n\nn\n\nc\n\no\n\nr\n\nr\n\ne\n\nc\n\nt\n\n\n\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n-\n\n\n\n\nT\n\no\n\nt\n\na\n\nl\n\n:\n\n \n\n1\n\n0\n\n3\n\n2\n\n9\n\n.\n\n4\n\n7\n\n \n\n+\n\n \n\n2\n\n8\n\n6\n\n5\n\n6\n\n6\n\n.\n\n8\n\n0\n\n \n\n-\n\n2\n\n9\n\n1\n\n0\n\n7\n\n0\n\n.\n\n3\n\n6\n\n \n\n-\n\n \n\n5\n\n8\n\n2\n\n5\n\n.\n\n8\n\n8\n\n \n\n=\n\n \n\n0\n\n.\n\n0\n\n3\n\n\n\n\nT\n\nr\n\na\n\nn\n\ns\n\na\n\nc\n\nt\n\ni\n\no\n\nn\n\ns\n\n \n\nc\n\nh\n\ne\n\nc\n\nk\n\n:\n\n \n\ni\n\nn\n\nc\n\no\n\nr\n\nr\n\ne\n\nc\n\nt",
             "errors" : [
             ]
           }
@@ -64,9 +424,9 @@
   "stages" : [
     "DocumentsDownloaded",
     "FilesAttached",
-    "AccountChosen",
     "IntegrityValidated",
-    "AdvancesChecked",
-    "MCI"
+    "AccountChosen",
+    "SubmissionValidated",
+    "ExportedToSF"
   ]
 }
