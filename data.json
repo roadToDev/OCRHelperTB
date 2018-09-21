@@ -388,6 +388,21 @@
       ]
     },
     {
+      "id" : "006f400020Ec9T2AAJ",
+      "name" : "Test",
+      "stages" : [
+        {
+          "name" : "DocumentsDownloaded",
+          "stageStatus" : {
+            "statusStr" : "InProcessStStatus",
+            "log" : "restart",
+            "errors" : [
+            ]
+          }
+        }
+      ]
+    },
+    {
       "id" : "006f400000Ec9UZAAZ",
       "name" : "Wilma & Frieda's Cafe - 9/20/2018 - 3",
       "stages" : [
