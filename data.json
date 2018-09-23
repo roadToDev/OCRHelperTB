@@ -307,16 +307,16 @@
         {
           "name" : "DocumentsDownloaded",
           "stageStatus" : {
-            "statusStr" : "CompletedStStatus",
+            "statusStr" : "CanceledStStatus",
             "log" : "Inbox\\Wells Fargo\\app(006f400000Ec4FMAAZ).pdf\nInbox\\Wells Fargo\\WF_TRIO_201808(006f400000Ec4FMAAZ).pdf\nInbox\\Wells Fargo\\WF_TRIO_201807(006f400000Ec4FMAAZ).pdf\nInbox\\Wells Fargo\\WF_TRIO_201806(006f400000Ec4FMAAZ).pdf",
             "errors" : [
             ]
           }
         },
         {
-          "name" : "FilesAttached",
+          "name" : "ExportedToSF",
           "stageStatus" : {
-            "statusStr" : "NotStartedStStatus",
+            "statusStr" : "CanceledStStatus",
             "log" : "",
             "errors" : [
             ]
@@ -331,16 +331,16 @@
         {
           "name" : "DocumentsDownloaded",
           "stageStatus" : {
-            "statusStr" : "CompletedStStatus",
+            "statusStr" : "CanceledStStatus",
             "log" : "Inbox\\Key Banks\\CCR 1(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\App(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\BS 1483- 08.18(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\BS 1483- 07.18(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\BS 1483- 06.18(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\CCR 2(006f400000Ec49sAAB).pdf\nInbox\\Key Banks\\BS 1483- 09.18 MTD(006f400000Ec49sAAB).pdf",
             "errors" : [
             ]
           }
         },
         {
-          "name" : "FilesAttached",
+          "name" : "ExportedToSF",
           "stageStatus" : {
-            "statusStr" : "NotStartedStStatus",
+            "statusStr" : "CanceledStStatus",
             "log" : "restart",
             "errors" : [
             ]
@@ -355,16 +355,16 @@
         {
           "name" : "DocumentsDownloaded",
           "stageStatus" : {
-            "statusStr" : "CompletedStStatus",
+            "statusStr" : "CanceledStStatus",
             "log" : "Inbox\\Wells Fargo\\BANK STATEMENT AUG 2018 0505(006f400000Ec4gmAAB).pdf\nInbox\\Wells Fargo\\App(006f400000Ec4gmAAB).pdf\nInbox\\Wells Fargo\\BANKING STATEMENT JULY 0505 2018  PDF.PDF\nInbox\\Wells Fargo\\BANK STATEMENT MAY 2018 0505(006f400000Ec4gmAAB).pdf\nInbox\\Wells Fargo\\BANK STATEMENT JUNE 2018 0505(006f400000Ec4gmAAB).pdf",
             "errors" : [
             ]
           }
         },
         {
-          "name" : "FilesAttached",
+          "name" : "ExportedToSF",
           "stageStatus" : {
-            "statusStr" : "NotStartedStStatus",
+            "statusStr" : "CanceledStStatus",
             "log" : "restart",
             "errors" : [
             ]
@@ -375,21 +375,6 @@
     {
       "id" : "006f400000Ec9T2AAJ",
       "name" : "Tri Cities Orthodontics Specialists - 9/20/2018 - 2",
-      "stages" : [
-        {
-          "name" : "DocumentsDownloaded",
-          "stageStatus" : {
-            "statusStr" : "NotStartedStStatus",
-            "log" : "restart",
-            "errors" : [
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id" : "006f400020Ec9T2AAJ",
-      "name" : "Test",
       "stages" : [
         {
           "name" : "DocumentsDownloaded",

@@ -11,6 +11,7 @@ function showTable () {
 }
 
 function drawTable (jsonData) {
+  var oppos = jsonData.oppos.reverse()
   $(document).ready(function () {
     $('#oppos-table').remove()
     $('#my-table').append('<table class="table table-dark table-striped table table-bordered" id="oppos-table">' +
@@ -20,15 +21,16 @@ function drawTable (jsonData) {
       '<th scope="col" class="text-center" width="804px">Stages</th>' +
       '<th scope="col" class="text-center" width="30px">Timer</th>' +
       '</thead></tr>')
-    jsonData.oppos.forEach(function (item) {
-      var status = ''
+    oppos.forEach(function (item) {
+      var lastStageStatus = ''
+      var firstStageStatus = item.stages[0].stageStatus.statusStr
       try {
-        status = item.stages[5].stageStatus.statusStr
+        lastStageStatus = item.stages[5].stageStatus.statusStr
       } catch (err) {
       }
 
       $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(item.id) + '</td><td>' + item.name + '</td><td>' + addStages(jsonData, item.name) + '</td>' +
-        '<td>' + showTimer(item.id, status) + '</td></tr>')
+        '<td id="timer" style="align-content: center">' + showTimer(item.id, firstStageStatus, lastStageStatus) + '</td></tr>')
     })
     $('#oppos-table').append('</table>')
   })
