@@ -1,11 +1,18 @@
-/* global $ showCreatedDate showTimer showLog */
+/* global $ showCreatedDate showTimer showLog attachFiles */
 /* eslint-disable no-unused-vars, no-global-assign */
+
 var tableTheme = 'table-dark'
 var theadBgColor = 'background-color: #2c3034'
 var globalOpportunities
+var opportunityId = ''
+var opportunityStage = ''
+
 function showTable () {
   window.fetch('data.json')
     .then(function (response) {
+      if (response.status !== 200) {
+        window.alert('not 200' + 'status is: ' + response.status + ' ' + response.statusText)
+      }
       return response.json()
     })
     .then(function (myJson) {
@@ -88,24 +95,47 @@ function showPopUp (button, oppoId) {
   })
 }
 
+function setSelectedOppoIdAndStageName (id, stage) {
+  opportunityId = id
+  opportunityStage = stage
+}
+
 function showPopUpForCurrentStage (stage, oppoId) {
   switch (stage) {
     case 'DocumentsDownloaded':
+      setSelectedOppoIdAndStageName(oppoId, stage)
       showLog(oppoId, stage)
       break
     case 'FilesAttached':
+      setSelectedOppoIdAndStageName(oppoId, stage)
+      attachFiles(oppoId, stage)
       break
     case 'AccountChosen':
+      setSelectedOppoIdAndStageName(oppoId, stage)
       break
     case 'SubmissionValidated':
+      setSelectedOppoIdAndStageName(oppoId, stage)
       showLog(oppoId, stage)
       break
     case 'ExportedToSF':
+      setSelectedOppoIdAndStageName(oppoId, stage)
       showLog(oppoId, stage)
       break
     default:
       showLog(oppoId, stage)
       break
+  }
+}
+
+function resetStage () {
+  if (opportunityId !== '' && opportunityStage !== '') {
+    window.fetch('http://localhost:8080/reset/' + opportunityId + '/' + opportunityStage, {
+      method: 'GET'
+    }).then(function (response) {
+      if (response.status !== 200) {
+        window.alert('not 200' + 'status is: ' + response.status + ' ' + response.statusText)
+      }
+    }).catch(window.alert)
   }
 }
 
