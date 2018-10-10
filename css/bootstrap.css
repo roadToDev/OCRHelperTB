@@ -2405,6 +2405,16 @@ fieldset:disabled a.btn {
   background-color: #28a745;
   border-color: #28a745;
 }
+.btn-success2 {
+  color: #fff;
+  background-color: #1c7330;
+  border-color: #1c7330;
+}
+.btn-success2:hover {
+  color: #fff;
+  background-color: #195E2A;
+  border-color: #195E2A;
+}
 
 .btn-success:hover {
   color: #fff;
@@ -2506,6 +2516,16 @@ fieldset:disabled a.btn {
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
+}
+.btn-danger1 {
+  color: #fff;
+  background-color: #ff3d50;
+  border-color: #ff3d50;
+}
+.btn-danger1:hover {
+  color: #fff;
+  background-color: #cc3542;
+  border-color: #cc3542;
 }
 
 .btn-danger:hover {

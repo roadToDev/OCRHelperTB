@@ -1,9 +1,6 @@
 /* global */
 /* eslint-disable no-unused-vars, no-global-assign */
-function showTimer (id, firstStageStatus ,lastStageStatus) {
-  if (firstStageStatus === 'CanceledStStatus') {
-    return 'canceled'
-  }
+function showTimer (id, lastStageStatus) {
   if (lastStageStatus === 'CompletedStStatus') {
     var timeSpent = window.localStorage.getItem('timer' + id)
     if (timeSpent !== null) {

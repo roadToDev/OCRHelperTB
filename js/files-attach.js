@@ -6,6 +6,7 @@ function attachFiles (oppoId, stageName) {
   accountId = oppoId
   filesStr = []
   window.fetch('files.json')
+  // window.fetch('/files')
     .then(function (response) {
       if (response.status !== 200) {
         window.alert('not 200' + 'status is: ' + response.status + ' ' + response.statusText)
@@ -53,6 +54,7 @@ function showAttachedFilesLog (oppoId, stageName) {
 function sendFilesJson () {
   console.log(filesStr)
   window.fetch('http://localhost:8080/files/' + accountId, {
+  //  window.fetch('/files/' + accountId, {
     method: 'POST',
     body: JSON.stringify({
       'files': filesStr
