@@ -79,6 +79,9 @@ function addButton (jsonData, oppoId, stageName) {
             case 'InProcessStStatus':
               button = '<input type="button" value="' + stageName + '" class="btn btn-warning btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
               break
+            case 'NotStartedStStatus':
+              button = '<input type="button" value="' + stageName + '" class="btn btn-secondary btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+              break
             default:
               break
           }
