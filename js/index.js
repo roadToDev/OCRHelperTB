@@ -32,8 +32,8 @@ function drawTable (jsonData) {
       '<tr><thead style = "' + theadBgColor + '">' +
       '<th scope="col" class="text-center" width="30px">Date</th>' +
       '<th scope="col">Opportunity Name</th>' +
-      '<th scope="col" class="text-center" width="850px"">Stages</th>' +
-      '<th scope="col" class="text-center" width="95px">Timer</th>' +
+      '<th scope="col" class="text-center">Stages</th>' +
+      '<th scope="col" class="text-center" width="100px">Timer</th>' +
       '</thead></tr>')
     oppos.forEach(function (item) {
       var lastStageStatus = ''
@@ -42,8 +42,8 @@ function drawTable (jsonData) {
         lastStageStatus = item.stages[item.stages.length - 1].stageStatus.statusStr
       }
 
-      $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(item.id) + '</td><td>' + item.name + '</td><td class="text-center">' + addStages(jsonData, item.id) + '</td>' +
-        '<td id="timer" style="text-align: center">' + showTimer(item.id, lastStageStatus) + '</td></tr>')
+      $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(item.id) + '</td><td><a href="http://arcariusfunding.my.salesforce.com/' + item.id + '" class="oppo-href" target="_blank">' + item.name + '</a></td><td class="text-center text-nowrap">' + addStages(jsonData, item.id) + '</td>' +
+        '<td class="timer" style="text-align: center">' + showTimer(item.id, lastStageStatus) + '</td></tr>')
     })
     $('#oppos-table').append('</table>')
   })
@@ -148,5 +148,30 @@ function resetStage () {
     }).catch(window.alert)
   }
 }
+
+function setAppVersion () {
+  window.fetch('data.json')
+    // window.fetch('/status')
+    .then(function (response) {
+      if (response.status !== 200) {
+        window.alert('Data fetch error, ' + 'status is: ' + response.status + ' ' + response.statusText)
+      }
+      return response.json()
+    })
+    .then(function (myJson) {
+      if (myJson.appVersion !== undefined) {
+        setVersion(myJson.appVersion)
+      }
+    })
+}
+
+function setVersion (version) {
+  $(document).ready(function () {
+    $('')
+    $('#ocr-title').append('<span style="font-size: small; color: #737b81"> &nbsp;v.' + version + '</span>')
+  })
+}
+
+setAppVersion()
 
 showTableInterval()

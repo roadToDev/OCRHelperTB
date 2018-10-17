@@ -3566,5 +3566,6 @@
     "AccountChosen",
     "SubmissionValidated",
     "ExportedToSF"
-  ]
+  ],
+  "appVersion" : "2.0.0"
 }

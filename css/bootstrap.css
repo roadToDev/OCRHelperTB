@@ -9047,4 +9047,17 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6;
   }
 }
+
+.oppo-href{
+    color: #f6fff7;
+    text-decoration: none;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+.oppo-href:hover {
+    color: #afb3af;
+    text-decoration: underline;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */
