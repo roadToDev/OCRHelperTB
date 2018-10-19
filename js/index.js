@@ -5,7 +5,7 @@ var tableTheme = 'table-dark'
 var theadBgColor = 'background-color: #2c3034'
 var globalOpportunities
 var opportunityId = ''
-var opportunityStage = ''
+var opportunityStage = '22'
 var showTableInterval = function () { setInterval(showTable, 1000) }
 
 function showTable () {
