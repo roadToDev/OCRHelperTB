@@ -5,7 +5,7 @@ var tableTheme = 'table-dark'
 var theadBgColor = 'background-color: #2c3034'
 var globalOpportunities
 var opportunityId = ''
-var opportunityStage = '22'
+var opportunityStage = ''
 var showTableInterval = function () { setInterval(showTable, 1000) }
 
 function showTable () {
@@ -32,29 +32,34 @@ function drawTable (jsonData) {
       '<tr><thead style = "' + theadBgColor + '">' +
       '<th scope="col" class="text-center" width="30px">Date</th>' +
       '<th scope="col">Opportunity Name</th>' +
-      '<th scope="col" class="text-center">Stages</th>' +
+      addProcessesToTable(jsonData.processes) +
+    // '<th scope="col" class="text-center">Stages</th>' +
       '<th scope="col" class="text-center" width="100px">Timer</th>' +
       '</thead></tr>')
-    oppos.forEach(function (item) {
-      var lastStageStatus = ''
 
-      if (item.stages.length) {
-        lastStageStatus = item.stages[item.stages.length - 1].stageStatus.statusStr
+    oppos.forEach(function (oppo) {
+      var processesStages = []
+      oppo.processes.forEach(function (process) {
+        processesStages.push(process)
+      })
+      var lastStageStatus = ''
+      if (processesStages[1].stages.length) {
+        lastStageStatus = processesStages[1].stages[processesStages[1].stages.length - 1].stageStatus.statusStr
       }
 
-      $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(item.id) + '</td><td><a href="http://arcariusfunding.my.salesforce.com/' + item.id + '" class="oppo-href" target="_blank">' + item.name + '</a></td><td class="text-center text-nowrap">' + addStages(jsonData, item.id) + '</td>' +
-        '<td class="timer" style="text-align: center">' + showTimer(item.id, lastStageStatus) + '</td></tr>')
+      $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(oppo.id) + '</td><td><a href="http://arcariusfunding.my.salesforce.com/' + oppo.id + '" class="oppo-href" target="_blank">' + oppo.name + '</a></td><td class="text-center text-nowrap">' + addStages(jsonData, processesStages[1], oppo.id) + '</td><td class="text-center text-nowrap">' + addCBCStages(jsonData, processesStages[0], oppo.id) + '</td>' +
+          '<td class="timer" style="text-align: center">' + showTimer(oppo.id, lastStageStatus) + '</td></tr>')
     })
     $('#oppos-table').append('</table>')
   })
 }
 
-function addStages (jsonData, oppoId) {
+function addCBCStages (jsonData, process, oppoId) {
   var buttons = ''
-  jsonData.stages.forEach(function (stageName) {
-    buttons = buttons + ' ' + addButton(jsonData, oppoId, stageName)
+  process.stages.forEach(function (stage) {
+    buttons = buttons + ' ' + addButton(process, oppoId, stage.stageNameStr)
   })
-  jsonData.stages.forEach(function (stageName) {
+  jsonData.processes['Credit Report'].forEach(function (stageName) {
     if (buttons.indexOf(stageName) === -1) {
       buttons = buttons + ' <input type="button" value="' + stageName + '" class="btn btn-secondary btn-sm">'
     }
@@ -63,33 +68,75 @@ function addStages (jsonData, oppoId) {
   return buttons
 }
 
-function addButton (jsonData, oppoId, stageName) {
-  var button = ''
-  jsonData.oppos.forEach(function (oppo) {
-    if (oppo.id === oppoId) {
-      oppo.stages.forEach(function (stage) {
-        if (stage.name === stageName) {
-          switch (stage.stageStatus.statusStr) {
-            case 'CompletedStStatus':
-              button = '<input type="button" value="' + stageName + '" class="btn btn-success2 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-              break
-            case 'ErrorStStatus':
-              button = '<input type="button" value="' + stageName + '" class="btn btn-danger1 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-              break
-            case 'InProcessStStatus':
-              button = '<input type="button" value="' + stageName + '" class="btn btn-warning btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-              break
-            case 'NotStartedStStatus':
-              button = '<input type="button" value="' + stageName + '" class="btn btn-secondary btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-              break
-            default:
-              break
-          }
-        }
-      })
+function addStages (jsonData, process, oppoId) {
+  var buttons = ''
+  process.stages.forEach(function (stage) {
+    buttons = buttons + ' ' + addButton(process, oppoId, stage.stageNameStr)
+  })
+  jsonData.processes['Document Processing'].forEach(function (stageName) {
+    if (buttons.indexOf(stageName) === -1) {
+      buttons = buttons + ' <input type="button" value="' + stageName + '" class="btn btn-secondary btn-sm">'
     }
-  }
-  )
+  })
+  buttons += ''
+  return buttons
+}
+
+function addButton (process, oppoId, stageName) {
+  var button = ''
+  process.stages.forEach(function (stage) {
+    if (stage.stageNameStr === stageName) {
+      switch (stage.stageStatus.statusStr) {
+        case 'CompletedStStatus':
+          button = '<input type="button" value="' + stageName + '" class="btn btn-success2 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+          break
+        case 'ErrorStStatus':
+          button = '<input type="button" value="' + stageName + '" class="btn btn-danger1 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+          break
+        case 'InProcessStStatus':
+          button = '<input type="button" value="' + stageName + '" class="btn btn-warning btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+          break
+        case 'NotStartedStStatus':
+          button = '<input type="button" value="' + stageName + '" class="btn btn-secondary btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+          break
+        default:
+          break
+      }
+    }
+  })
+  // jsonData.oppos.forEach(function (oppo) {
+  //   if (oppo.id === oppoId) {
+  //     var oppoStages = oppo.processes.filter(function (process) {
+  //       if (process.processName === 'Document Processing') {
+  //         return process.stages
+  //       }
+  //     })
+  //     oppoStages.forEach(function (stage) {
+  //       stage.stages.forEach(function (stage) {
+  //         if (stage.stageNameStr === stageName) {
+  //           // console.log(stage)
+  //           switch (stage.stageStatus.statusStr) {
+  //             case 'CompletedStStatus':
+  //               button = '<input type="button" value="' + stageName + '" class="btn btn-success2 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+  //               break
+  //             case 'ErrorStStatus':
+  //               button = '<input type="button" value="' + stageName + '" class="btn btn-danger1 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+  //               break
+  //             case 'InProcessStStatus':
+  //               button = '<input type="button" value="' + stageName + '" class="btn btn-warning btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+  //               break
+  //             case 'NotStartedStStatus':
+  //               button = '<input type="button" value="' + stageName + '" class="btn btn-secondary btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+  //               break
+  //             default:
+  //               break
+  //           }
+  //         }
+  //       })
+  //     })
+  //   }
+  // }
+  // )
   return button
 }
 
@@ -167,11 +214,19 @@ function setAppVersion () {
 
 function setVersion (version) {
   $(document).ready(function () {
-    $('')
     $('#ocr-title').append('<span style="font-size: small; color: #737b81"> &nbsp;v.' + version + '</span>')
   })
 }
 
+function addProcessesToTable (processes) {
+  var html = ''
+  for (var processName in processes) {
+    html += '<th scope="col" class="text-center">' + processName + '</th>'
+  }
+  return html
+}
+
 setAppVersion()
 
-showTableInterval()
+// showTableInterval()
+showTable()
