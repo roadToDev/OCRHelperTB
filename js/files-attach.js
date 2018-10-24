@@ -40,12 +40,14 @@ function check (checkBox, fileName) {
 function showAttachedFilesLog (oppoId, stageName) {
   globalOpportunities.forEach(function (oppo) {
     if (oppo.id === oppoId) {
-      oppo.stages.forEach(function (stage) {
-        if (stage.name === stageName) {
-          stageName = stageName.replace(/([a-z](?=[A-Z]))/g, '$1 ')
-          $('#attachedFilesModalLabel').html(stageName)
-          $('#attachedFilesModalTextArea').html(stage.stageStatus.log)
-        }
+      oppo.processes.forEach(function (process) {
+        process.stages.forEach(function (stage) {
+          if (stage.stageNameStr === stageName) {
+            stageName = stageName.replace(/([a-z](?=[A-Z]))/g, '$1 ')
+            $('#attachedFilesModalLabel').html(stageName)
+            $('#attachedFilesModalTextArea').html(stage.stageStatus.log)
+          }
+        })
       })
     }
   })
