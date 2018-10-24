@@ -91,16 +91,13 @@ function addStages (jsonData, oppoId) {
     })
   }
   var stageIndex = 0
+  var buttonLength = 80
   allStages.forEach(function (stage) {
     var index = buttons.indexOf(stage)
-    console.log(stageIndex)
-   // console.log('index' + index)
     if (index === -1) {
       var charIndex = buttons.indexOf('>', stageIndex)
-      console.log('after ' + stageIndex)
-    //  console.log('before StageInd' + stageIndex)
-     // console.log('char' + charIndex)
       var notStartedButton = ' <input type="button" value="' + stage + '" class="btn btn-secondary btn-sm">'
+      console.log(notStartedButton.length)
       buttons = insert(buttons, charIndex + 1, notStartedButton)
 
       if (stageIndex === 0) {
@@ -109,8 +106,7 @@ function addStages (jsonData, oppoId) {
       } else {
         stageIndex = stageIndex + notStartedButton.length
       }
-     // console.log('after StageInd' + stageIndex)
-    } else stageIndex = index
+    } else stageIndex = index + buttonLength
   })
   buttons += ''
   return buttons
