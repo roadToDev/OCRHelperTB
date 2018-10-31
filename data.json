@@ -1,8 +1,64 @@
 {
   "oppos" : [
+{
+  "id" : "0066C000004t9w2QAY",
+  "name" : "Test - 33",
+  "processes" : [
+    {
+      "processName" : "Document Processing",
+      "stages" : [
+        {
+          "stageNameStr" : "DocumentsDownloaded",
+          "stageStatus" : {
+            "statusStr" : "CompletedStStatus",
+            "log" : "Inbox/BankOfAmerica/CCR__PAUL_BURNIA.html\nInbox/BankOfAmerica/CCR__PAUL_BURNIA.html\nInbox/BankOfAmerica/CCR__PAUL_BURNIA.html\nInbox/BankOfAmerica/CCR__PAUL_BURNIA.html\nInbox/BankOfAmerica/CCR__PAUL_BURNIA.html\nInbox/BankOfAmerica/CCR__PAUL_BURNIA.html\nInbox/BankOfAmerica/CCR__PAUL_BURNIA.html",
+            "errors" : [
+            ]
+          }
+        },
+        {
+          "stageNameStr" : "FilesAttached",
+          "stageStatus" : {
+            "statusStr" : "ErrorStStatus",
+            "log" : "Test log 2",
+            "errors" : [
+            ]
+          }
+        }
+      ]
+    }
+  ]
+},
+    {
+      "id" : "0066C000014t9MGQAY",
+      "name" : "Some another test oppo - 24",
+      "processes" : [
+
+      ]
+    },
     {
       "id" : "0066C000004t9MGQAY",
       "name" : "SPRINGBOARD VIRTUAL REALITY LLC - 10/17/2018 - 24",
+      "processes" : [
+        {
+          "processName" : "Credit Report",
+          "stages" : [
+            {
+              "stageNameStr" : "CBCPulled",
+              "stageStatus" : {
+                "statusStr" : "InProcessStStatus",
+                "log" : "",
+                "errors" : [
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id" : "0066C000004t9M2QAY",
+      "name" : "Test - 24",
       "processes" : [
         {
           "processName" : "Credit Report",

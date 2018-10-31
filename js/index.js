@@ -33,7 +33,6 @@ function drawTable (jsonData) {
       '<th scope="col" class="text-center" width="30px">Date</th>' +
       '<th scope="col">Opportunity Name</th>' +
       addProcessesToTable(jsonData.processes) +
-    // '<th scope="col" class="text-center">Stages</th>' +
       '<th scope="col" class="text-center" width="100px">Timer</th>' +
       '</thead></tr>')
 
@@ -43,9 +42,11 @@ function drawTable (jsonData) {
         processesStages.push(process)
       })
       var lastStageStatus = ''
-      if (processesStages[1].stages.length) {
-        lastStageStatus = processesStages[1].stages[processesStages[1].stages.length - 1].stageStatus.statusStr
-      }
+      processesStages.forEach(function (process) {
+        if (process.processName === 'Document Processing' && process.stages.length) {
+          lastStageStatus = process.stages[process.stages.length - 1].stageStatus.statusStr
+        }
+      })
 
       $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(oppo.id) + '</td><td><a href="http://arcariusfunding.my.salesforce.com/' + oppo.id + '" class="oppo-href" target="_blank">' + oppo.name + '</a></td>' + addStages(jsonData, oppo.id) + '<td class="text-center text-nowrap">' +
            showTimer(oppo.id, lastStageStatus) + '</tr>')
@@ -54,125 +55,73 @@ function drawTable (jsonData) {
   })
 }
 
-// function addCBCStages (jsonData, process, oppoId) {
-//   console.log(process)
-//   var buttons = ''
-//   process.stages.forEach(function (stage) {
-//     buttons = buttons + ' ' + addButton(process, oppoId, stage.stageNameStr)
-//   })
-//   jsonData.processes[process.processName].forEach(function (stageName) {
-//     if (buttons.indexOf(stageName) === -1) {
-//       buttons = buttons + ' <input type="button" value="' + stageName + '" class="btn btn-secondary btn-sm">'
-//     }
-//   })
-//   buttons += ''
-//   return buttons
-// }
-
 function addStages (jsonData, oppoId) {
-  var buttons = ''
+  var htmlButtons = ''
+  var processes = jsonData.processes
+  var oppoProcesses
+
   jsonData.oppos.forEach(function (oppo) {
     if (oppo.id === oppoId) {
-      oppo.processes = oppo.processes.reverse()
-      oppo.processes.forEach(function (process) {
-        buttons += '<td class="text-center text-nowrap">'
-        process.stages.forEach(function (stage) {
-          buttons = buttons + ' ' + addButton(jsonData, oppoId, stage.stageNameStr)
-        })
-        buttons += '</td>'
-      })
+      oppoProcesses = oppo.processes
     }
   })
-
-  var allStages = []
-  for (var key in jsonData.processes) {
-    jsonData.processes[key].forEach(function (stage) {
-      allStages.push(stage)
+  var oppoStages = []
+  oppoProcesses.forEach(function (process) {
+    process.stages.forEach(function (stage) {
+      oppoStages.push(stage)
     })
-  }
-  var stageIndex = 0
-  var buttonLength = 80
-  allStages.forEach(function (stage) {
-    var index = buttons.indexOf(stage)
-    if (index === -1) {
-      var charIndex = buttons.indexOf('>', stageIndex)
-      var notStartedButton = ' <input type="button" value="' + stage + '" class="btn btn-secondary btn-sm">'
-      console.log(notStartedButton.length)
-      buttons = insert(buttons, charIndex + 1, notStartedButton)
-
-      if (stageIndex === 0) {
-        stageIndex = charIndex + stageIndex + notStartedButton.length
-        console.log('here')
-      } else {
-        stageIndex = stageIndex + notStartedButton.length
-      }
-    } else stageIndex = index + buttonLength
   })
-  buttons += ''
-  return buttons
+  htmlButtons += addButtons(processes, oppoStages, oppoId)
+  return htmlButtons
 }
 
-function addButton (jsonData, oppoId, stageName) {
-  var button = ''
-  var oppoStages = []
-  jsonData.oppos.forEach(function (oppo) {
-    if (oppo.id === oppoId) {
-      oppo.processes.forEach(function (process) {
-        process.stages.forEach(function (stage) {
-          oppoStages.push(stage)
-        })
-      })
-    }
-  })
-  oppoStages.forEach(function (oppoStage) {
-    if (oppoStage.stageNameStr === stageName) {
-      switch (oppoStage.stageStatus.statusStr) {
-        case 'CompletedStStatus':
-          button = '<input type="button" value="' + stageName + '" class="btn btn-success2 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-          break
-        case 'ErrorStStatus':
-          button = '<input type="button" value="' + stageName + '" class="btn btn-danger1 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-          break
-        case 'InProcessStStatus':
-          button = '<input type="button" value="' + stageName + '" class="btn btn-warning btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-          break
-        case 'NotStartedStStatus':
-          button = '<input type="button" value="' + stageName + '" class="btn btn-secondary btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-          break
-        default:
-          break
-      }
-    }
-  })
+function addButtons (processes, oppoStages, oppoId) {
+  var htmlButtons = ''
 
+  for (var processName in processes) {
+    htmlButtons += '<td class="text-center text-nowrap">'
+    processes[processName].forEach(function (stageName) {
+      var flag = false
+      var existingStage
+      oppoStages.forEach(function (stage) {
+        if (stageName === stage.stageNameStr) {
+          flag = true
+          existingStage = stage
+        }
+      })
+      if (flag) {
+        htmlButtons += addButton(existingStage, oppoId)
+      } else {
+        htmlButtons += '<input type="button" value="' + stageName + '" class="btn btn-secondary btn-sm">'
+      }
+      htmlButtons += ' '
+    })
+    htmlButtons += '</td>'
+  }
+
+  return htmlButtons
+}
+
+function addButton (stage, oppoId) {
+  var button = ''
+  switch (stage.stageStatus.statusStr) {
+    case 'CompletedStStatus':
+      button = '<input type="button" value="' + stage.stageNameStr + '" class="btn btn-success2 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+      break
+    case 'ErrorStStatus':
+      button = '<input type="button" value="' + stage.stageNameStr + '" class="btn btn-danger1 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+      break
+    case 'InProcessStStatus':
+      button = '<input type="button" value="' + stage.stageNameStr + '" class="btn btn-warning btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+      break
+    case 'NotStartedStStatus':
+      button = '<input type="button" value="' + stage.stageNameStr + '" class="btn btn-secondary btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
+      break
+    default:
+      break
+  }
   return button
 }
-
-// function addButton (process, oppoId, stageName) {
-//   var button = ''
-//   process.stages.forEach(function (stage) {
-//     if (stage.stageNameStr === stageName) {
-//       switch (stage.stageStatus.statusStr) {
-//         case 'CompletedStStatus':
-//           button = '<input type="button" value="' + stageName + '" class="btn btn-success2 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-//           break
-//         case 'ErrorStStatus':
-//           button = '<input type="button" value="' + stageName + '" class="btn btn-danger1 btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-//           break
-//         case 'InProcessStStatus':
-//           button = '<input type="button" value="' + stageName + '" class="btn btn-warning btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-//           break
-//         case 'NotStartedStStatus':
-//           button = '<input type="button" value="' + stageName + '" class="btn btn-secondary btn-sm" id="btn" onclick="showPopUp(this, \'' + oppoId + '\')">'
-//           break
-//         default:
-//           break
-//       }
-//     }
-//   })
-//
-//   return button
-// }
 
 function showPopUp (button, oppoId) {
   globalOpportunities.forEach(function (oppo) {
@@ -260,11 +209,7 @@ function addProcessesToTable (processes) {
   return html
 }
 
-function insert (str, index, value) {
-  return str.substr(0, index) + value + str.substr(index)
-}
-
 setAppVersion()
 
-// showTableInterval()
-showTable()
+showTableInterval()
+// showTable()

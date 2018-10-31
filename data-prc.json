@@ -1,0 +1,38 @@
+{
+  "oppos" : [
+    {
+      "id" : "0066C000004t9MGQAY",
+      "name" : "SPRINGBOARD VIRTUAL REALITY LLC - 10/17/2018 - 24",
+      "processes" : [
+        {
+          "processName" : "Credit Report",
+          "stages" : [
+            {
+              "stageNameStr" : "CBCPulled",
+              "stageStatus" : {
+                "statusStr" : "InProcessStStatus",
+                "log" : "",
+                "errors" : [
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processes" : {
+    "Document Processing" : [
+      "DocumentsDownloaded",
+      "FilesAttached",
+      "IntegrityValidated",
+      "AccountChosen",
+      "SubmissionValidated",
+      "ExportedToSF"
+    ],
+    "Credit Report" : [
+      "CBCPulled"
+    ]
+  },
+  "appVersion" : "web-2.3.13"
+}
