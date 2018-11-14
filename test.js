@@ -1,4 +1,4 @@
-/* global $ chooseAccount checkCurrentAdvances checkDeposits showCreatedDate showTimer showLog attachFiles */
+/* global $ chooseAccount showCreatedDate checkCurrentAdvances showTimer showLog attachFiles */
 /* eslint-disable no-unused-vars, no-global-assign */
 
 var tableTheme = 'table-dark'
@@ -11,8 +11,8 @@ var process = ''
 var showTableInterval = function () { setInterval(showTable, 1000) }
 
 function showTable () {
-  window.fetch('data.json')
-  // window.fetch('/status')
+  // window.fetch('data.json')
+  window.fetch('/status')
     .then(function (response) {
       if (response.status !== 200) {
         clearInterval(showTableInterval)
@@ -25,18 +25,13 @@ function showTable () {
       processes = myJson.processes
       drawTable(myJson)
     })
-  $(document).ready(function () {
-    $('#navi-div').css({
-      'width': ($('#my-table').width() + 'px')
-    })
-  })
 }
 
 function drawTable (jsonData) {
   var oppos = jsonData.oppos.reverse()
   $(document).ready(function () {
     $('#oppos-table').remove()
-    $('#my-table').append('<table class="table ' + tableTheme + '  table table-bordered" id="oppos-table">' +
+    $('#my-table').append('<table class="table ' + tableTheme + ' table-striped table table-bordered" id="oppos-table">' +
       '<tr><thead style = "' + theadBgColor + '">' +
       '<th scope="col" class="text-center" width="30px">Date</th>' +
       '<th scope="col">Opportunity Name</th>' +
@@ -56,8 +51,8 @@ function drawTable (jsonData) {
         }
       })
 
-      $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(oppo.id) + '</td><td><a href="http://arcariusfunding.my.salesforce.com/' + oppo.id + '" class="oppo-href" target="_blank">' + oppo.name + '</a></td>' + addStages(jsonData, oppo.id) + '<td class="text-center text-nowrap">' +
-           showTimer(oppo.id, lastStageStatus) + '</tr>')
+      $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(oppo.id) + '</td><td><a href="http://arcariusfunding.my.salesforce.com/' + oppo.id + '" class="oppo-href" target="_blank">' + oppo.oppoName + '</a></td>' + addStages(jsonData, oppo.id) + '<td class="text-center text-nowrap">' +
+        showTimer(oppo.id, lastStageStatus) + '</tr>')
     })
     $('#oppos-table').append('</table>')
   })
@@ -180,10 +175,6 @@ function showPopUpForCurrentStage (stage, oppoId) {
       setSelectedOppoIdProcessAndStageName(oppoId, stage)
       checkCurrentAdvances(oppoId, stage, process)
       break
-    case 'TrueRevenue':
-      setSelectedOppoIdProcessAndStageName(oppoId, stage)
-      checkDeposits(oppoId, stage, process)
-      break
     default:
       setSelectedOppoIdProcessAndStageName(oppoId, stage)
       showLog(oppoId, stage)
@@ -206,8 +197,8 @@ function resetStage () {
 }
 
 function setAppVersion () {
-  window.fetch('data.json')
-  // window.fetch('/status')
+  //  window.fetch('data.json')
+  window.fetch('/status')
     .then(function (response) {
       if (response.status !== 200) {
         window.alert('Data fetch error, ' + 'status is: ' + response.status + ' ' + response.statusText)
@@ -238,4 +229,3 @@ function addProcessesToTable (processes) {
 setAppVersion()
 
 showTableInterval()
-// showTable()

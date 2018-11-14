@@ -9060,4 +9060,10 @@ a.text-dark:hover, a.text-dark:focus {
     text-decoration: underline;
 }
 
+.currentAdv {
+  max-height: 450px;
+  overflow-y: auto;
+  /* padding-bottom: 20px; */
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

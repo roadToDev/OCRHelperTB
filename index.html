@@ -8,6 +8,8 @@
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/account-choose.js"></script>
+    <script src="js/current-advances.js"></script>
+    <script src="js/deposits.js"></script>
     <script src="js/settings.js"></script>
     <script src="js/date.js"></script>
     <script src="js/files-attach.js"></script>
@@ -17,7 +19,7 @@
 
 </head>
 <body style="background-color: #D2D7DF" id="body">
-<div class="container-fluid" style="padding-top: 10px; min-width: 500px">
+<div class="container-fluid" style="padding-top: 10px; min-width: 1473px" id="navi-div">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212529">
         <img src="img/arcarius.png" width="40" height="40" /> &nbsp;
         <span class="navbar-brand" id="ocr-title" href="#">OCR Helper</span>
@@ -109,6 +111,52 @@
                 <button type="button" class="btn btn-primary" onclick="sendAccountJson()" data-dismiss="modal" id="chooseAccountButton">Send Chosen Account</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="resetStage()">Stage Reset</button>
             </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Current Advances -->
+<div class="modal" id="currentAdvancesModal" tabindex="-1" role="dialog" aria-labelledby="Log" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #a5afb7; border-color: #6c757d; border-width: 2px">
+                <h5 class="modal-title" id="currentAdvancesModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="MCI Name" aria-label="Recipient's username" aria-describedby="basic-addon2" id="currentAdvMciLabel">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" onclick="addNewMca()">Add New MCI</button>
+                        <button class="btn btn-outline-secondary" data-dismiss="modal" type="button" onclick="markAsFixed()">Mark as fixed</button>
+                    </div>
+                </div>
+                <div class="border currentAdv" id="currentAdvTable">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Modal Deposits -->
+<div class="modal" id="depositsAdvancesModal" tabindex="-1" role="dialog" aria-labelledby="Log" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #a5afb7; border-color: #6c757d; border-width: 2px">
+                <h5 class="modal-title" id="depositsModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="border currentAdv" id="depositsTable">
+
+                </div>
+            </div>
+
         </div>
     </div>
 </div>

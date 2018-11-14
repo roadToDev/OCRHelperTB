@@ -1,0 +1,670 @@
+[
+  [
+    {
+      "date" : "2018-10-19",
+      "descr" : "",
+      "amount" : "-1250"
+    },
+    {
+      "date" : "2018-10-19",
+      "descr" : "",
+      "amount" : "-1250"
+    },
+    {
+      "date" : "2018-10-23",
+      "descr" : "",
+      "amount" : "-1250"
+    },
+    {
+      "date" : "2018-10-26",
+      "descr" : "",
+      "amount" : "-1250"
+    },
+    {
+      "date" : "2018-10-26",
+      "descr" : "",
+      "amount" : "-1250"
+    }
+  ],
+  [
+    {
+      "date" : "2018-10-01",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-09",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-09",
+      "descr" : "BANK OF AMERICA CREDIT CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-15",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-22",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-29",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    }
+  ],
+  [
+    {
+      "date" : "2018-10-10",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:132772821 825778 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-19",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:132780707960494 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-23",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:132783528165342 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-24",
+      "descr" : "CITI CARD ONLINE DES:RETRY PYMT ID:132780707960494 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-29",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:132789368965246 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-29",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:122789368583486 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    }
+  ],
+  [
+    {
+      "date" : "2018-10-02",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-03",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#2 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-04",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#3 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-05",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#4 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-09",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#5 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-10",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#6 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-11",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#7 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-12",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#8 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-15",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#9 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-16",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#10 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-17",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#11 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-18",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#12 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-19",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#13 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-22",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#14 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-23",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152#15 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    },
+    {
+      "date" : "2018-10-29",
+      "descr" : "GREEN CAPITAL DES:BM ID:877.535.5152 INDN:CESARSRESTAURANTMCF1 CO ID:BTX3178677 CCD",
+      "amount" : "-1169"
+    }
+  ],
+  [
+    {
+      "date" : "2018-10-09",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-26",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-30",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-04",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-26",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-30",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-26",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-30",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-10-29",
+      "descr" : "",
+      "amount" : "-500"
+    }
+  ],
+  [
+    {
+      "date" : "2018-08-01",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-02",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-03",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-06",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-07",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-08",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-09",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-10",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-13",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-14",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-15",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-16",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-17",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-20",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-21",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-22",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-23",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-24",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    },
+    {
+      "date" : "2018-08-27",
+      "descr" : "ACE FUNDING 8954 DES:DEBITS ID:002588 INDN:CESARS TACO CO ID:2475617234 CCD PMT INFO:NTE*(323) 852-3219\\",
+      "amount" : "-577"
+    }
+  ],
+  [
+    {
+      "date" : "2018-08-07",
+      "descr" : "",
+      "amount" : "-84.17"
+    },
+    {
+      "date" : "2018-08-27",
+      "descr" : "",
+      "amount" : "-84.17"
+    },
+    {
+      "date" : "2018-08-13",
+      "descr" : "",
+      "amount" : "-84.17"
+    },
+    {
+      "date" : "2018-08-02",
+      "descr" : "",
+      "amount" : "-84.17"
+    }
+  ],
+  [
+    {
+      "date" : "2018-08-06",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-13",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-20",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-27",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    }
+  ],
+  [
+    {
+      "date" : "2018-08-02",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-03",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#2 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-06",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#3 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-07",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#4 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-08",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#5 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-09",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#6 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-10",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#7 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-13",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#8 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-14",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#9 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-15",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #10 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-16",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#11 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-17",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #12 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-20",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #13 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-21",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #14 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-22",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #1 5 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-23",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #1 6 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-24",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #1 7 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-27",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #1 8 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-28",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #19 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-29",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#20 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-30",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #21 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-08-31",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #22 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    }
+  ],
+  [
+    {
+      "date" : "2018-08-01",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:112712541978959 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-06",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:112714417869276 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-08",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:132718413609540 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-20",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:112724552289404 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-22",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:112730645964276 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-27",
+      "descr" : "CITI CARD ONLINE DES:PAYMENT ID:112729712377381 INDN:SANDRA SANCHEZ CO ID:CITICTP WEB",
+      "amount" : "-500"
+    }
+  ],
+  [
+    {
+      "date" : "2018-08-01",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-03",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-09",
+      "descr" : "",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-08-30",
+      "descr" : "",
+      "amount" : "-500"
+    }
+  ],
+  [
+    {
+      "date" : "2018-09-06",
+      "descr" : "BANK OF AMERICA CREDIT CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-09-10",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-09-17",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-09-24",
+      "descr" : "BANK OF AMERICA BUSINESS CARD Bill Payment",
+      "amount" : "-500"
+    }
+  ],
+  [
+    {
+      "date" : "2018-09-04",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #23 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-05",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#24 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-06",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #25 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-07",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #26 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-10",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #27 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-11",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #28 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-12",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #29 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-13",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#30 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-14",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #31 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-17",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #32 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-18",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #33 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-19",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#34 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-20",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #35 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-21",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #36 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-24",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #37 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-25",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #38 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-26",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #39 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-27",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411#40 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    },
+    {
+      "date" : "2018-09-28",
+      "descr" : "YELLOWSTONE CAPI DES:8009552411 ID:800-955-2411 #41 INDN:CESARSRESTAURANTMCF1 CO ID:RPP4384677 CCD",
+      "amount" : "-729"
+    }
+  ],
+  [
+    {
+      "date" : "2018-09-06",
+      "descr" : "Online Banking payment to CRD 8426 Confirmation# 2825765375",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-09-19",
+      "descr" : "Online Banking transfer to CHK 0236 Confirmation# 1535792310",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-09-27",
+      "descr" : "Online Banking transfer to CHK 0236 Confirmation# 6205006775",
+      "amount" : "-500"
+    },
+    {
+      "date" : "2018-09-28",
+      "descr" : "Online Banking transfer to CHK 0236 Confirmation# 3514242420",
+      "amount" : "-500"
+    }
+  ]
+]

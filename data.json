@@ -1,7 +1,7 @@
 {
   "oppos" : [
 {
-  "id" : "0066C000004t9w2QAY",
+  "id" : "0066C000104t9w2QAY",
   "name" : "Test - 33",
   "processes" : [
     {
@@ -30,14 +30,14 @@
   ]
 },
     {
-      "id" : "0066C000014t9MGQAY",
+      "id" : "0066C000024t9MGQAY",
       "name" : "Some another test oppo - 24",
       "processes" : [
 
       ]
     },
     {
-      "id" : "0066C000004t9MGQAY",
+      "id" : "0066C000001t9MGQAY",
       "name" : "SPRINGBOARD VIRTUAL REALITY LLC - 10/17/2018 - 24",
       "processes" : [
         {
@@ -46,7 +46,7 @@
             {
               "stageNameStr" : "CBCPulled",
               "stageStatus" : {
-                "statusStr" : "InProcessStStatus",
+                "statusStr" : "StoppedStStatus",
                 "log" : "",
                 "errors" : [
                 ]
@@ -57,7 +57,7 @@
       ]
     },
     {
-      "id" : "0066C000004t9M2QAY",
+      "id" : "0066C000054t9M2QAY",
       "name" : "Test - 24",
       "processes" : [
         {
@@ -100,7 +100,7 @@
       ]
     },
     {
-      "id" : "1166C000004t9M3QAY",
+      "id" : "1166C000004t9s3QAY",
       "name" : "Test Oppo - 10/17/2018 - 24",
       "processes" : [
         {
@@ -157,6 +157,24 @@
               }
             },
             {
+              "stageNameStr" : "CurrentAdvances",
+              "stageStatus" : {
+                "statusStr" : "CompletedStStatus",
+                "log" : "",
+                "errors" : [
+                ]
+              }
+            },
+            {
+              "stageNameStr" : "TrueRevenue",
+              "stageStatus" : {
+                "statusStr" : "CompletedStStatus",
+                "log" : "",
+                "errors" : [
+                ]
+              }
+            },
+            {
               "stageNameStr" : "SubmissionValidated",
               "stageStatus" : {
                 "statusStr" : "CompletedStStatus",
@@ -185,6 +203,8 @@
       "FilesAttached",
       "IntegrityValidated",
       "AccountChosen",
+      "CurrentAdvances",
+      "TrueRevenue",
       "SubmissionValidated",
       "ExportedToSF"
     ],

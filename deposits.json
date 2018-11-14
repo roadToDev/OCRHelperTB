@@ -1,0 +1,42 @@
+[
+  {
+    "id" : 0,
+    "date" : "2018-10-01",
+    "descr" : "GREEN CAPITAL DES:SYN ID:5 INDN:CESARS RESTAURANT INC CO ID:1364809337 CCD",
+    "amount" : "41526",
+    "isDeducted" : false,
+    "tags" : [
+      "GenericDeposits$"
+    ]
+  },
+  {
+    "id" : 1,
+    "date" : "2018-10-01",
+    "descr" : "HRTLAND PMT SYS DES:TXNS/FEES ID:XXXXXXXXXX99421 INDN:CESARS ON CLARK CO ID:WFBEHPS001 CCD",
+    "amount" : "7703.87",
+    "isDeducted" : true,
+    "tags" : [
+      "Fee$"
+    ]
+  },
+  {
+    "id" : 2,
+    "date" : "2018-10-01",
+    "descr" : "HRTLAND PMT SYS DES:TXNS/FEES ID:XXXXXXXXXX99421 INDN:CESARS ON CLARK CO ID:WFBEHPS001 CCD",
+    "amount" : "6737.34",
+    "isDeducted" : true,
+    "tags" : [
+      "Fee$"
+    ]
+  },
+  {
+    "id" : 3,
+    "date" : "2018-10-01",
+    "descr" : "HRTLAND PMT SYS DES:TXNS/FEES ID:XXXXXXXXXX99421 INDN:CESARS ON CLARK CO ID:WFBEHPS001 CCD",
+    "amount" : "2827.13",
+    "isDeducted" : false,
+    "tags" : [
+      "Fee$"
+    ]
+  }
+]
