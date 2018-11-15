@@ -50,5 +50,5 @@ function addCheckBox (isDeducted) {
 }
 
 function checkTrueRev () {
-  
+
 }
