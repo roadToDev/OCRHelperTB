@@ -4,8 +4,8 @@ var chosenAccount = ''
 var accountId = ''
 function chooseAccount (id, stage) {
   accountId = id
-  window.fetch('accounts.json')
-  // window.fetch('/accounts/' + id)
+ // window.fetch('accounts.json')
+   window.fetch('/accounts/' + id)
     .then(function (response) {
       if (response.status !== 200) {
         window.alert('not 200' + 'status is: ' + response.status + ' ' + response.statusText)
@@ -19,7 +19,7 @@ function chooseAccount (id, stage) {
 
 function showAccounts (accounts, id, stage) {
   $('#chooseAccountModal').modal()
-  let html = ''
+  var html = ''
   accounts.forEach(function (account) {
     html += '<a href="#" onclick="addAccount(\'' + account + '\')" class="list-group-item list-group-item-action">' + account + '</a>'
   })
@@ -32,8 +32,8 @@ function addAccount (account) {
 }
 
 function sendAccountJson () {
-  window.fetch('http://localhost:8080/accounts', {
-  //  window.fetch('/accounts', {
+ // window.fetch('http://localhost:8080/accounts', {
+    window.fetch('/accounts', {
     method: 'POST',
     body: JSON.stringify({
       'oppoId': accountId,

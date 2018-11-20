@@ -24,12 +24,13 @@ function showTable () {
       globalOpportunities = myJson.oppos
       processes = myJson.processes
       drawTable(myJson)
+    //  showHideColumn()
     })
-  $(document).ready(function () {
-    $('#navi-div').css({
-      'width': ($('#my-table').width() + 'px')
-    })
-  })
+  // $(document).ready(function () {
+  //   $('#navi-div').css({
+  //     'width': ($('#my-table').width() + 'px')
+  //   })
+  // })
 }
 
 function drawTable (jsonData) {
@@ -56,7 +57,7 @@ function drawTable (jsonData) {
         }
       })
 
-      $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(oppo.id) + '</td><td><a href="http://arcariusfunding.my.salesforce.com/' + oppo.id + '" class="oppo-href" target="_blank">' + oppo.name + '</a></td>' + addStages(jsonData, oppo.id) + '<td class="text-center text-nowrap">' +
+      $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(oppo.id) + '</td><td><a href="http://arcariusfunding.my.salesforce.com/' + oppo.id + '" class="oppo-href" target="_blank">' + oppo.oppoName + '</a></td>' + addStages(jsonData, oppo.id) + '<td class="text-center text-nowrap">' +
            showTimer(oppo.id, lastStageStatus) + '</tr>')
     })
     $('#oppos-table').append('</table>')
@@ -176,7 +177,7 @@ function showPopUpForCurrentStage (stage, oppoId) {
       setSelectedOppoIdProcessAndStageName(oppoId, stage)
       showLog(oppoId, stage)
       break
-    case 'CurrentAdvances':
+    case 'AdvancesValidated':
       setSelectedOppoIdProcessAndStageName(oppoId, stage)
       checkCurrentAdvances(oppoId, stage, process)
       break
@@ -207,7 +208,7 @@ function resetStage () {
 
 function setAppVersion () {
   window.fetch('data.json')
-  // window.fetch('/status')
+ //  window.fetch('/status')
     .then(function (response) {
       if (response.status !== 200) {
         window.alert('Data fetch error, ' + 'status is: ' + response.status + ' ' + response.statusText)
@@ -233,6 +234,12 @@ function addProcessesToTable (processes) {
     html += '<th scope="col" class="text-center">' + processName + '</th>'
   }
   return html
+}
+
+function showHideColumn(){
+  $(document).ready(function() {
+    $('td:nth-child(3),th:nth-child(3)').hide()
+  })
 }
 
 setAppVersion()

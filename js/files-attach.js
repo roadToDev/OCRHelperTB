@@ -6,7 +6,7 @@ function attachFiles (oppoId, stageName) {
   accountId = oppoId
   filesStr = []
   window.fetch('files.json')
-  // window.fetch('/files')
+  //  window.fetch('/files')
     .then(function (response) {
       if (response.status !== 200) {
         window.alert('not 200' + 'status is: ' + response.status + ' ' + response.statusText)
@@ -18,24 +18,40 @@ function attachFiles (oppoId, stageName) {
     })
 }
 
+$(function () {
+  $('#attachedFilesModal').on('change', '.file-checkbox', function () {
+    var checked = $(this).prop('checked')
+    var fileName = $(this).attr('id')
+    if (checked) {
+      filesStr.push(fileName)
+    } else {
+      var fileNameIndex = filesStr.indexOf(fileName)
+      if (fileNameIndex !== -1) {
+        filesStr.splice(fileNameIndex, 1)
+      }
+    }
+  })
+})
 function showAttachedFiles (filesJson, oppoId, stageName) {
   $('#attachedFilesModal').modal()
   let html = ''
-  filesJson.forEach(function (fileName) {
-    html += '<div class="custom-control custom-checkbox border-bottom"><input type="checkbox" onclick="check(this, \'' + fileName + '\')" class="custom-control-input" id = "' + fileName + '"><label class="custom-control-label" for="' + fileName + '" id="fileLabel">' + fileName + '</label></div>'
+  filesJson.forEach(function (fileName, index) {
+    fileName = JSON.stringify(fileName).replace(/^['"]/g, '').replace(/['"]$/g, '')
+    html += '<div class="custom-control custom-checkbox border-bottom"><input type="checkbox" class="custom-control-input file-checkbox" id="' + fileName + '" data-index= "' + index + '"><label class="custom-control-label" for="' + fileName + '" id="fileLabel">' + fileName + '</label></div>'
   })
   $('#attachedFilesModalFilesArea').html(html)
   showAttachedFilesLog(oppoId, stageName)
 }
 
-function check (checkBox, fileName) {
-  var index = filesStr.indexOf(fileName)
-  if (index > -1) {
-    filesStr.splice(index, 1)
-  } else {
-    filesStr.push(fileName)
-  }
-}
+// function check (checkBox, fileName) {
+//   var index = filesStr.indexOf(fileName)
+//   if (index > -1) {
+//     filesStr.splice(index, 1)
+//   } else {
+//     filesStr.push(fileName)
+//   }
+//
+// }
 
 function showAttachedFilesLog (oppoId, stageName) {
   globalOpportunities.forEach(function (oppo) {
@@ -55,8 +71,8 @@ function showAttachedFilesLog (oppoId, stageName) {
 
 function sendFilesJson () {
   console.log(filesStr)
-  window.fetch('http://localhost:8080/files/' + accountId, {
-  //  window.fetch('/files/' + accountId, {
+  // window.fetch('http://localhost:8080/files/' + accountId, {
+  window.fetch('/files/' + accountId, {
     method: 'POST',
     body: JSON.stringify({
       'files': filesStr

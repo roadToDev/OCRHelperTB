@@ -1,10 +1,10 @@
 {
   "files" : [
-    "CSV1/Chase/006f400000CQlBpAAL/Debrino May BS",
-    "CSV1/Chase/006f400000CQlBpAAL/Debrino April BS",
-    "CSV1/Chase/006f400000CQlBpAAL/Debrino June BS",
-    "CSV1/WellsFargo/006f400000EbOauAAF /June-July 2018",
-    "CSV1/WellsFargo/006f400000EbOauAAF /May-June 2018",
-    "CSV1/WellsFargo/006f400000EbOauAAF /July- August 2018"
+    "CSV1\\Chase\\006f400000CQlBpAAL\\Debrino May BS",
+    "CSV1\\Chase\\006f400000CQlBpAAL\\Debrino April BS",
+    "CSV1\\Chase\\006f400000CQlBpAAL\\Debrino June BS",
+    "CSV1\\WellsFargo\\006f400000EbOauAAF \\June-July 2018",
+    "CSV1\\WellsFargo\\006f400000EbOauAAF \\May-June 2018",
+    "CSV1\\WellsFargo\\006f400000EbOauAAF \\July- August 2018"
   ]
 }

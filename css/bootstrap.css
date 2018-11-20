@@ -9066,4 +9066,8 @@ a.text-dark:hover, a.text-dark:focus {
   /* padding-bottom: 20px; */
 }
 
+#my-table {
+  overflow-x: auto;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

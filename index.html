@@ -5,7 +5,9 @@
     <title>OCR Helper</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/popper.js"></script>
     <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/lodash.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/account-choose.js"></script>
     <script src="js/current-advances.js"></script>
@@ -19,7 +21,8 @@
 
 </head>
 <body style="background-color: #D2D7DF" id="body">
-<div class="container-fluid" style="padding-top: 10px; min-width: 1473px" id="navi-div">
+<div>
+<div id="navi-div">
     <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #212529">
         <img src="img/arcarius.png" width="40" height="40" /> &nbsp;
         <span class="navbar-brand" id="ocr-title" href="#">OCR Helper</span>
@@ -39,7 +42,8 @@
         </div>
     </nav>
 </div>
-<div class="container-fluid" id="my-table">
+<div id="my-table">
+</div>
 </div>
 <!-- Modal Log -->
 <div class="modal" id="logModal" tabindex="-1" role="dialog" aria-labelledby="Log" aria-hidden="true">
@@ -136,11 +140,13 @@
 
                 </div>
             </div>
-
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="resetStage()">Stage Reset</button>
+            </div>
         </div>
     </div>
 </div>
-<!-- Modal Deposits -->
+<!-- Modal True Revenue -->
 <div class="modal" id="depositsAdvancesModal" tabindex="-1" role="dialog" aria-labelledby="Log" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
@@ -151,10 +157,24 @@
                 </button>
             </div>
             <div class="modal-body">
-
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="dropdown-keywords">Keywords</button>
+                        <div class="dropdown-menu" id="dropdown-truerev">
+                        </div>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="Recipient's username" aria-describedby="basic-addon2" id="trueRevLabel">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" onclick="addNewTrueRevenue()">Add</button>
+                        <button class="btn btn-outline-secondary" data-dismiss="modal" type="button" onclick="markAsFixed()">Mark as fixed</button>
+                    </div>
+                </div>
                 <div class="border currentAdv" id="depositsTable">
 
                 </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="resetStage()">Stage Reset</button>
             </div>
 
         </div>

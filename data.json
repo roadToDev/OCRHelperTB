@@ -2,7 +2,7 @@
   "oppos" : [
 {
   "id" : "0066C000104t9w2QAY",
-  "name" : "Test - 33",
+  "oppoName" : "Test - 33",
   "processes" : [
     {
       "processName" : "Document Processing",
@@ -31,14 +31,14 @@
 },
     {
       "id" : "0066C000024t9MGQAY",
-      "name" : "Some another test oppo - 24",
+      "oppoName" : "Some another test oppo - 24",
       "processes" : [
 
       ]
     },
     {
       "id" : "0066C000001t9MGQAY",
-      "name" : "SPRINGBOARD VIRTUAL REALITY LLC - 10/17/2018 - 24",
+      "oppoName" : "SPRINGBOARD VIRTUAL REALITY LLC - 10/17/2018 - 24",
       "processes" : [
         {
           "processName" : "Credit Report",
@@ -58,7 +58,7 @@
     },
     {
       "id" : "0066C000054t9M2QAY",
-      "name" : "Test - 24",
+      "oppoName" : "Test - 24",
       "processes" : [
         {
           "processName" : "Credit Report",
@@ -101,7 +101,7 @@
     },
     {
       "id" : "1166C000004t9s3QAY",
-      "name" : "Test Oppo - 10/17/2018 - 24",
+      "oppoName" : "Test Oppo - 10/17/2018 - 24",
       "processes" : [
         {
           "processName" : "Credit Report",
@@ -157,7 +157,7 @@
               }
             },
             {
-              "stageNameStr" : "CurrentAdvances",
+              "stageNameStr" : "AdvancesValidated",
               "stageStatus" : {
                 "statusStr" : "CompletedStStatus",
                 "log" : "",
@@ -203,7 +203,7 @@
       "FilesAttached",
       "IntegrityValidated",
       "AccountChosen",
-      "CurrentAdvances",
+      "AdvancesValidated",
       "TrueRevenue",
       "SubmissionValidated",
       "ExportedToSF"
