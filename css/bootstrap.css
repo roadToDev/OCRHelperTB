@@ -1592,7 +1592,7 @@ pre code {
 .table-secondary,
 .table-secondary > th,
 .table-secondary > td {
-  background-color: #d6d8db;
+  background-color: rgba(85, 83, 87, 0.29);
 }
 
 .table-hover .table-secondary:hover {
@@ -5527,7 +5527,7 @@ button.close {
 
 @media (min-width: 992px) {
   .modal-lg {
-    max-width: 800px;
+    max-width: 900px;
   }
 }
 
@@ -9068,6 +9068,24 @@ a.text-dark:hover, a.text-dark:focus {
 
 #my-table {
   overflow-x: auto;
+}
+
+.docsDownloadedTableArea {
+  max-height: 350px;
+  overflow-y: auto;
+  /* padding-bottom: 20px; */
+}
+
+#docDownloadTable {
+  overflow-x: auto;
+}
+
+/*#documentsModal {*/
+  /*min-height: 500px;*/
+/*}*/
+
+.autoModal.modal .modal-body{
+  min-height: 430px;
 }
 
 /*# sourceMappingURL=bootstrap.css.map */

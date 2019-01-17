@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Opportunities List</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/popper.js"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+<body style="background-color: #778189">
+<div class="container-fluid" style="margin-top: 15px">
+    <table class="table table-bordered table-dark table-striped" id="oppoTableList">
+    </table>
+</div>
+
+<script>
+
+  function fetchOpposForList () {
+    window.fetch('data.json')
+    // window.fetch('/status')
+      .then(function (response) {
+        if (response.status !== 200) {
+          window.alert('Data fetch error, ' + 'status is: ' + response.status + ' ' + response.statusText)
+        }
+        return response.json()
+      })
+      .then(function (myJson) {
+        drawTableForList(myJson)
+        //  showHideColumn()
+      })
+  }
+
+function drawTableForList(json){
+    var prevDay = getDay(json.oppos[0].date)
+    var threeDaysArray = []
+    var thisDayArray = []
+    json.oppos.forEach(function(oppo){
+        var thisDay = getDay(oppo.date)
+        if (prevDay === thisDay) {
+          thisDayArray.push(oppo)
+        } else  {
+          threeDaysArray.push(thisDayArray)
+            prevDay = thisDay
+            thisDayArray = []
+          thisDayArray.push(oppo)
+        }
+    })
+  threeDaysArray.push(thisDayArray)
+
+  var objOppoArray = []
+  threeDaysArray.forEach(function (dateArray) {
+    var objForTable = { date: '', inProcess: 0, canceled: 0, creditDeclined: 0, documentDeclined: 0, fullProcessed: 0, total: 0 }
+    dateArray.forEach(function (oppo) {
+      if (oppo.oppoStatus === 'Inactive') {
+        oppo.processes.forEach(function (process) {
+          process.stages.forEach(function (stage) {
+            if (stage.stageNameStr === 'CreditDecline'){
+              if (stage.stageStatus.statusStr === 'StoppedStStatus') {
+                objForTable.creditDeclined += 1
+              }
+            }
+            if (stage.stageNameStr === 'DocumentDecline'){
+              if (stage.stageStatus.statusStr === 'StoppedStStatus') {
+                objForTable.documentDeclined += 1
+              } else if (stage.stageStatus.statusStr === 'CompletedStStatus') {
+                objForTable.fullProcessed += 1
+              }
+            }
+
+          })
+        })
+        objForTable.total += 1
+      } else {
+        objForTable.inProcess += 1
+      }
+      objForTable.date = getDate(oppo.date)
+    })
+
+    objForTable.canceled = objForTable.total - objForTable.creditDeclined - objForTable.documentDeclined - objForTable.fullProcessed
+    objForTable.total += objForTable.inProcess
+    objOppoArray.push(objForTable)
+  })
+  objOppoArray = objOppoArray.reverse()
+  console.log(objOppoArray)
+  drawRealTable(objOppoArray)
+}
+
+function drawRealTable(objArray) {
+    var html = '<thead><th>Date</th><th class="text-center">Total</th><th class="text-center">In Process</th><th class="text-center">Canceled</th><th class="text-center">Credit Decline</th><th class="text-center">Document Decline</th><th class="text-center">Completed</th></thead>'
+  objArray.forEach(function (oneDayList) {
+    html += '<tr style="background-color: #292f34"><td>' + oneDayList.date + '</td><td class="text-center">' + oneDayList.total + '</td><td class="text-center">' + oneDayList.inProcess + '</td><td class="text-center">' + oneDayList.canceled + '</td><td class="text-center">' + oneDayList.creditDeclined + '</td><td class="text-center">' + oneDayList.documentDeclined + '</td><td class="text-center">' + oneDayList.fullProcessed + '</td></tr>'
+  })
+  html += ''
+  $('#oppoTableList').html(html)
+}
+
+function getDay(date){
+    var dateArray = date.split(' ')
+  return dateArray[2]
+}
+function getDate(date){
+    var dateArray = date.split(' ')
+    var dateForTable = dateArray[2] + ' ' + dateArray[1] + ' ' + dateArray[5]
+    return dateForTable
+}
+
+fetchOpposForList()
+
+
+</script>
+
+</body>
+</html>

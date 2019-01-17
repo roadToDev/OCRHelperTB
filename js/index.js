@@ -1,4 +1,4 @@
-/* global $ chooseAccount checkCurrentAdvances checkDeposits showCreatedDate showTimer showLog attachFiles */
+/* global $ showDocsDownloadModal showExportToSfModal chooseAccount showFiles checkCurrentAdvances checkDeposits showCreatedDate showTimer showLog attachFiles */
 /* eslint-disable no-unused-vars, no-global-assign */
 
 var tableTheme = 'table-dark'
@@ -39,26 +39,36 @@ function drawTable (jsonData) {
     $('#oppos-table').remove()
     $('#my-table').append('<table class="table ' + tableTheme + '  table table-bordered" id="oppos-table">' +
       '<tr><thead style = "' + theadBgColor + '">' +
+      '<th scope="col"></th>' +
       '<th scope="col" class="text-center" width="30px">Date</th>' +
       '<th scope="col">Opportunity Name</th>' +
       addProcessesToTable(jsonData.processes) +
       '<th scope="col" class="text-center" width="100px">Timer</th>' +
       '</thead></tr>')
-
+    var oppoNumber = 1
+    var prevDate = oppos[oppos.length - 1].date
     oppos.forEach(function (oppo) {
       var processesStages = []
       oppo.processes.forEach(function (process) {
         processesStages.push(process)
       })
       var lastStageStatus = ''
+      var lastStageName = ''
+      var decline = false
       processesStages.forEach(function (process) {
-        if (process.processName === 'Document Processing' && process.stages.length) {
-          lastStageStatus = process.stages[process.stages.length - 1].stageStatus.statusStr
-        }
+        process.stages.forEach(function (stage) {
+          if (stage.stageStatus.statusStr === 'StoppedStStatus') {
+            decline = true
+          } else if (process.processName === 'Document Processing' && process.stages.length) {
+            lastStageStatus = process.stages[process.stages.length - 1].stageStatus.statusStr
+            lastStageName = process.stages[process.stages.length - 1].stageNameStr
+          }
+        })
       })
-
-      $('#oppos-table').append('<tr><td style="font-size: 11px">' + showCreatedDate(oppo.id) + '</td><td><a href="http://arcariusfunding.my.salesforce.com/' + oppo.id + '" class="oppo-href" target="_blank">' + oppo.oppoName + '</a></td>' + addStages(jsonData, oppo.id) + '<td class="text-center text-nowrap">' +
-           showTimer(oppo.id, lastStageStatus) + '</tr>')
+      oppoNumber = getOppoNumber(prevDate, oppo.date, oppoNumber)
+      $('#oppos-table').append('<tr><td  width="3px" class="' + addClass(oppo.oppoStatus) + '"></td><td style="font-size: 11px">' + showCreatedDate(oppo.date) + '</td><td><a href="http://arcariusfunding.my.salesforce.com/' + oppo.id + '" class="oppo-href" target="_blank">' + oppoNumber + '.  ' + oppo.oppoName + '</a></td>' + addStages(jsonData, oppo.id) + '<td class="text-center text-nowrap">' +
+           showTimer(oppo.id, lastStageStatus, lastStageName, oppo.date, decline) + '</tr>')
+    prevDate = oppo.date
     })
     $('#oppos-table').append('</table>')
   })
@@ -159,7 +169,7 @@ function showPopUpForCurrentStage (stage, oppoId) {
   switch (stage) {
     case 'DocumentsDownloaded':
       setSelectedOppoIdProcessAndStageName(oppoId, stage)
-      showLog(oppoId, stage)
+      showDocsDownloadModal(oppoId, stage, process)
       break
     case 'FilesAttached':
       setSelectedOppoIdProcessAndStageName(oppoId, stage)
@@ -171,11 +181,12 @@ function showPopUpForCurrentStage (stage, oppoId) {
       break
     case 'SubmissionValidated':
       setSelectedOppoIdProcessAndStageName(oppoId, stage)
-      showLog(oppoId, stage)
+      console.log(process)
+      showLog(oppoId, stage, process)
       break
     case 'ExportedToSF':
       setSelectedOppoIdProcessAndStageName(oppoId, stage)
-      showLog(oppoId, stage)
+      showExportToSfModal(oppoId, stage, process)
       break
     case 'AdvancesValidated':
       setSelectedOppoIdProcessAndStageName(oppoId, stage)
@@ -208,7 +219,7 @@ function resetStage () {
 
 function setAppVersion () {
   window.fetch('data.json')
- //  window.fetch('/status')
+  //  window.fetch('/status')
     .then(function (response) {
       if (response.status !== 200) {
         window.alert('Data fetch error, ' + 'status is: ' + response.status + ' ' + response.statusText)
@@ -236,11 +247,28 @@ function addProcessesToTable (processes) {
   return html
 }
 
-function showHideColumn(){
-  $(document).ready(function() {
+function showHideColumn () {
+  $(document).ready(function () {
     $('td:nth-child(3),th:nth-child(3)').hide()
   })
 }
+
+function addClass (status) {
+  if (status) {
+    return 'bg-success'
+  }
+}
+
+function getOppoNumber (prevDay, day, number) {
+  var prevDayArray = prevDay.split(' ')
+  var dayArray = day.split(' ')
+  if (prevDayArray[2] === dayArray[2]) {
+    return number + 1
+  } else {
+    return 1
+  }
+}
+
 
 setAppVersion()
 

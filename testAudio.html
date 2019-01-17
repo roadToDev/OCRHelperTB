@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/howler.js"></script>
+</head>
+<body>
+<audio id="audio" src="audio.mp3" preload="auto" style="display: none"></audio>
+<a href="javascript:play_single_sound()" id="audio-href">Play 5-sec sound on single channel</a>
+<script type="text/javascript">
+  function play_single_sound() {
+    document.getElementById('audio').play()
+  }
+</script>
+</body>
+</html>

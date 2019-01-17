@@ -60,21 +60,26 @@ function addCheckBox (id, isDeducted) {
   }
 }
 
+$(function () {
+  $('#depositsAdvancesModal').on('click', 'a.dropdown-item', function (e) {
+    addTrueRevName($(e.target).text())
+  })
+})
+
 function fetchDropDown () {
-  var html = '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">McaDepoWithdNames</a>' + '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">GenericDepositsKeywords</a>' + '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">OnlineKeywords</a>' +
-    '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">WireKeywords</a>' +
-    '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">OtherDeductableKeywords</a>' +
-    '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">GenericWithdKeywords</a>' +
-    '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">NsfKeywords</a>' +
-    '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">McaKeywords</a>' +
-    '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">ReturnKeywords</a>' +
-    '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">OverdraftKeywords</a>' +
-    '<a class="dropdown-item" href="#" onclick="addTrueRevName(this)">McaWithdNames</a>'
+  var html = '<a class="dropdown-item" href="#">McaDepoWithdNames</a>' + '<a class="dropdown-item" href="#">GenericDepositsKeywords</a>' + '<a class="dropdown-item" href="#">OnlineKeywords</a>' +
+    '<a class="dropdown-item" href="#">WireKeywords</a>' +
+    '<a class="dropdown-item" href="#">OtherDeductableKeywords</a>' +
+    '<a class="dropdown-item" href="#">GenericWithdKeywords</a>' +
+    '<a class="dropdown-item" href="#">NsfKeywords</a>' +
+    '<a class="dropdown-item" href="#">McaKeywords</a>' +
+    '<a class="dropdown-item" href="#">ReturnKeywords</a>' +
+    '<a class="dropdown-item" href="#">OverdraftKeywords</a>' +
+    '<a class="dropdown-item" href="#">McaWithdNames</a>'
   $('#dropdown-truerev').html(html)
 }
 
-function addTrueRevName (item) {
-  revName = item.text
+function addTrueRevName (revName) {
   $('#dropdown-keywords').text(revName)
 }
 

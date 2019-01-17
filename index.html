@@ -10,10 +10,12 @@
     <script src="js/lodash.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/account-choose.js"></script>
+    <script src="js/export-to-sf.js"></script>
+    <script src="js/audio-play.js"></script>
     <script src="js/current-advances.js"></script>
     <script src="js/deposits.js"></script>
+    <script src="js/docs-download.js"></script>
     <script src="js/settings.js"></script>
-    <script src="js/date.js"></script>
     <script src="js/files-attach.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/index.js"></script>
@@ -36,6 +38,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <!--<a class="dropdown-item" href="#" onclick="changeTheme()">Change theme</a>-->
                         <a class="dropdown-item" href="#" onclick="showTable()">Refresh table</a>
+                        <a class="dropdown-item" href="oppo-list.html">Opportunities list</a>
                     </div>
                 </li>
             </ul>
@@ -59,6 +62,67 @@
                 <pre id="text-area"></pre>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"  onclick="tryToFix()">Mark As Fixed</button>
+
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"  onclick="resetStage()">Stage Reset</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Export to sf Log -->
+<div class="modal" id="exportToSfModal" tabindex="-1" role="dialog" aria-labelledby="Log" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #a5afb7; border-color: #6c757d; border-width: 2px">
+                <h5 class="modal-title" id="exportToSfModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <pre id="exportToSfTextArea"></pre>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"  onclick="clearSf()">Clear SF</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"  onclick="exportToSfMarkAsFixed()">Mark As Fixed</button>
+
+
+                <button type="button" class="btn btn-secondary" data-dismiss="modal"  onclick="resetStage()">Stage Reset</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Documents Modal Log -->
+<div class="autoModal modal" id="documentsModal" tabindex="-1" role="dialog" aria-labelledby="Log" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #a5afb7; border-color: #6c757d; border-width: 2px">
+                <h5 class="modal-title" id="documentsModalLabel"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm border-right">
+                        <pre id="documentsTextArea"></pre>
+                    </div>
+                    <div class="col-sm">
+                        <div>
+                            <input class="form-control" onkeyup="searchLayout()" id="docsDownloadInput" type="text">
+                        </div>
+                        <div class="col-md-12 docsDownloadedTableArea">
+                            <table id="docDownloadTable" class="table"></table>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" data-dismiss="modal" type="button" onclick="addDefinitions()">Add definitions to bank</button>
+                <button class="btn btn-primary" data-dismiss="modal" type="button" onclick="docsDownloadMarkAsFixed()">Mark as fixed</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal"  onclick="resetStage()">Stage Reset</button>
             </div>
         </div>
@@ -130,9 +194,9 @@
             </div>
             <div class="modal-body">
                 <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="MCI Name" aria-label="Recipient's username" aria-describedby="basic-addon2" id="currentAdvMciLabel">
+                    <input type="text" class="form-control" placeholder="MCA Name" aria-label="Recipient's username" aria-describedby="basic-addon2" id="currentAdvMciLabel">
                     <div class="input-group-append">
-                        <button class="btn btn-outline-secondary" type="button" onclick="addNewMca()">Add New MCI</button>
+                        <button class="btn btn-outline-secondary" type="button" onclick="addNewMca()">Add New MCA</button>
                         <button class="btn btn-outline-secondary" data-dismiss="modal" type="button" onclick="markAsFixed()">Mark as fixed</button>
                     </div>
                 </div>
@@ -180,5 +244,7 @@
         </div>
     </div>
 </div>
+<audio id="audio" src="true.mp3"></audio>
+
 </body>
 </html>
